@@ -1,0 +1,106 @@
+.banner-static {
+  position: relative;
+  height: 60vh;
+  background-color: #65176F;
+  overflow: hidden;
+}
+
+.carousel-image-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.carousel-image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.7) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.banner-static .banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.banner-static .carousel-caption {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.menu-background {
+    background-image: url('../img/menu-background.jpg');
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.product-img {
+    width: 30rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.price-container {
+    font-family: 'LilitaOne', sans-serif;
+    border: 2px solid #8BC34A; 
+    border-radius: 40px 0 0 0; 
+    font-weight: bold; 
+    background: #fff;
+    padding: 0px 5px 0px 16px;
+    font-size: 1.6rem !important;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.price-separator {
+    flex-grow: 1;
+    height: 20px;
+    background-image: url('../img/separator-menu_03.jpg');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    margin-bottom: -6px;
+}
+
+.separator-line {
+    height: 4px;
+    width: 100%;
+    margin: 2rem 0;
+    background: radial-gradient(ellipse at center, #C9CDCA 0%, rgba(255,210,0,0) 80%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.protein-background {
+    background-image: url('../img/proteins-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+
+.extra-menu-background {
+    background-image: url('../img/extra-menu-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+
