@@ -9,3 +9,28 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+function scrollCarousel(direction) {
+  const track = document.getElementById('carouselTrack');
+  const itemWidth = track.querySelector('.custom-carousel-item').offsetWidth + 20; // item width + margin
+  track.scrollBy({
+    left: direction * itemWidth * 2, // Avanza o retrocede 2 ítems
+    behavior: 'smooth'
+  });
+}
+
+
+document.querySelectorAll('.custom-carousel-item img').forEach(img => {
+  img.addEventListener('click', function () {
+    const lightbox = document.getElementById('lightboxOverlay');
+    const lightboxImg = document.getElementById('lightboxImage');
+    lightboxImg.src = this.src;
+    lightbox.style.display = 'flex';
+  });
+});
+
+
+function closeLightbox() {
+  document.getElementById('lightboxOverlay').style.display = 'none';
+}
