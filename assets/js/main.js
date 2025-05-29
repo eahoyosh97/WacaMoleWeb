@@ -34,3 +34,22 @@ document.querySelectorAll('.custom-carousel-item img').forEach(img => {
 function closeLightbox() {
   document.getElementById('lightboxOverlay').style.display = 'none';
 }
+
+
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+const overlay = document.querySelector('.menu-overlay');
+const closeBtn = document.querySelector('.menu-close');
+
+function closeMenu() {
+  nav.classList.remove('active');
+  overlay.classList.remove('active');
+}
+
+toggle.addEventListener('click', () => {
+  nav.classList.add('active');
+  overlay.classList.add('active');
+});
+
+overlay.addEventListener('click', closeMenu);
+closeBtn.addEventListener('click', closeMenu);

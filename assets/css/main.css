@@ -98,6 +98,35 @@ body {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.4)
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 998;
+}
+
+.menu-close {
+    display: none;
+}
+
+.nav.active + .menu-overlay,
+.menu-overlay.active {
+    display: block;
+}
+
 .banner-img {
     position: relative;
     height: 100%;
@@ -173,6 +202,46 @@ body {
   .carousel-caption p {
     font-size: 1rem;
   }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 60%;
+        background-color: var(--purple);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5rem 2rem;
+        gap: 1.5rem;
+        transition: right 0.3s ease-in-out;
+        z-index: 999;
+    }
+
+    .nav.active {
+        right: 0;
+    }
+
+    .btn-header {
+        font-size: 0.6rem;
+        height: auto;
+        padding: 0.75rem 1.25rem;
+    }
+
+    .menu-close {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: var(--white);
+        align-self: flex-end;
+        margin-bottom: 2rem;
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 576px) {
