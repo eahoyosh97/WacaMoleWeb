@@ -280,3 +280,16 @@ body {
         font-size: 1rem;
     }
 }
+
+
+@media (max-width: 575.98px) {
+    .footer-btns {
+        flex-wrap: wrap !important;
+    }
+
+    .footer-btns .footer-btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        justify-content: center;
+    }
+}
