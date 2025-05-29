@@ -233,9 +233,13 @@ body {
 }
 
 .footer-box {
-    padding: 3rem 8rem;
+    padding: 3rem 5rem;
     border-radius: 0.5rem;
 }
+
+    .footer-box .row {
+        flex-wrap: nowrap;
+    }
 
 .footer-box .footer-social-handle {
     font-size: 0.85rem !important;
@@ -249,4 +253,30 @@ body {
 .footer-btn {
     background: transparent !important;
     border: none;
+}
+
+@media (max-width: 991.98px) {
+    .footer-box {
+        padding: 2rem;
+    }
+
+    .footer-box .row div {
+        width: 10%;
+    }
+
+    .footer-btn img {
+        width: 9rem !important;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+    }
+
+    .footer-link-list a.footer-item {
+        font-size: 0.75rem !important;
+    }
+
+    .footer-quote {
+        font-size: 1rem;
+    }
 }
