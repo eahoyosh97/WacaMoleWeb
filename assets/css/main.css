@@ -352,6 +352,10 @@ body {
     .footer-quote {
         font-size: 1rem;
     }
+
+    .separator-img {
+        margin-bottom: -10px;
+    }
 }
 
 
