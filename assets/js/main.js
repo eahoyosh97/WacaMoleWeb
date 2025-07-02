@@ -11,6 +11,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+window.addEventListener('scroll', function () {
+  const header = document.querySelector('.header');
+  if (window.scrollY > 50) {
+    header.classList.add('shrink');
+  } else {
+    header.classList.remove('shrink');
+  }
+});
+
+
 function scrollCarousel(direction) {
   const track = document.getElementById('carouselTrack');
   const itemWidth = track.querySelector('.custom-carousel-item').offsetWidth + 20; // item width + margin
