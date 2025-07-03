@@ -1,3 +1,7 @@
+body {
+  background-color: #65176F !important;
+}
+
 .banner-static {
   position: relative;
   height: 60vh;
@@ -140,13 +144,15 @@
   position: relative;
   padding: 1rem 0;
   z-index: 0;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 .custom-carousel-track::-webkit-scrollbar {
   display: none;
 }
 
-.custom-carousel-item {
+/* .custom-carousel-item {
   flex: 0 0 auto;
   width: 400px;
   margin: 0 10px;
@@ -156,6 +162,21 @@
   position: relative;
   z-index: 1;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+.custom-carousel-item {
+  flex: 0 0 auto;
+  width: 80%; /* Ancho base para móviles */
+  max-width: 400px; /* Máximo ancho */
+  min-width: 250px; /* Mínimo ancho */
+  margin: 0 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  aspect-ratio: 4/3; /* Mantener proporción de la imagen */
 }
 
   .custom-carousel-item:hover {
@@ -202,6 +223,12 @@
   max-height: 90%;
   border-radius: 8px;
   box-shadow: 0 0 25px rgba(255,255,255,0.3);
+}
+
+@media (min-width: 768px) {
+  .custom-carousel-item {
+    width: 400px;
+  }
 }
 
 .custom-inner-box {
@@ -316,6 +343,64 @@ ul.red-bullets li::before {
   display: none;
 }
 
+.title-item-menu {
+  width: 300px; 
+  height: auto; 
+  display: block;
+}
+
+.cathering-btn-main {
+  height: auto !important; 
+  min-height: 30px;
+  padding: 0.75rem 1.5rem !important;
+  font-size: 1.2rem !important;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.catherine-container {
+  padding: 0 6rem !important;
+}
+
+.text-choose-service {
+  width: 500px; 
+  color: #ffffff;
+}
+
+
+@media (max-width: 992px) {
+  .cathering-btn-main {
+    font-size: 1rem !important;
+    padding: 0.6rem 1.2rem !important;
+  }
+
+  .catherine-container {
+    padding: 0 !important;
+  }
+
+  .container, .container-md, .container.px-5 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    max-width: 100% !important;
+  }
+
+  .text-choose-service {
+    width: 100%; 
+    color: #ffffff;
+  }
+
+  .product-img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+  }
+
+  .main-title-banner {
+    font-size: 4rem !important;
+    white-space: nowrap;
+    display: inline-block;
+  }
+}
 
 
 @media (max-width: 767.98px) {
@@ -333,16 +418,43 @@ ul.red-bullets li::before {
     display: block;
   }
 
-  .product-img {
-    width: 100%;
-    height: 12rem;
-    object-fit: cover;
-  }
-
   .title-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .catherine-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .catherine-container .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px !important;
+  }
+
+  .vertical-stack {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .vertical-stack .faqs-label {
+    width: 100%;
+    padding: 12px 15px;
+    background: #f0f0f0;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .product-img {
+    padding: 0 2rem;
   }
 
   .prtns-main-cnt {
@@ -378,5 +490,75 @@ ul.red-bullets li::before {
 
   .separator-drinks {
     display: block;
+  }
+}
+
+
+@media (max-width: 576px) {
+  html, body {
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  .cathering-btn-main {
+    font-size: 1rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+  
+  .menu-title-main, .menu-background img[src*="title.png"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .product-img {
+    height: 10rem;
+  }
+
+  .title-img {
+    width: 80% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }  
+
+  .row .col-md-6 .mb-4 .title-item-menu {
+    width: 300px !important;
+  }
+  
+  .prtns-main-cnt {
+    margin-left: 50px !important;
+    margin-right: 15px !important;
+    max-width: 100% !important;
+  }
+
+  .frm-book-fiesta {
+    padding: 0 2rem;
+  }
+
+  .drinks-main-container {
+    padding-left: 80px !important;
+  }
+  
+  .padding-menu-container,
+  .padding-menu-container-md {
+    padding: 1rem !important;
+  }
+  
+  .footer-box {
+    padding: 1rem !important;
+  }
+  
+  .separator-line {
+    margin: 1rem 0;
+  }
+
+  .carousel-button {
+    display: none;
+  }
+  .custom-carousel-item {
+    width: 70%;
+    min-width: 200px;
   }
 }
