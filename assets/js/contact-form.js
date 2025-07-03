@@ -26,11 +26,18 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
+        let fullMessage = '';
+        if (name) {
+            fullMessage += `Nombre de contacto: ${name}\n`;
+        }
+
+        fullMessage += `Email de contacto: ${email}\n\n${message}`;
+
         const params = {
             name: name || "Anonymous",
             email: email,
             title: subject || "(No Subject)",
-            message: message
+            message: fullMessage
         };
 
         emailjs.send("service_zb8ilgy", "template_34iwanb", params).then(function(response) {

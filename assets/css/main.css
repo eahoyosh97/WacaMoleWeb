@@ -345,6 +345,11 @@ body {
     border: none;
 }
 
+.contact-frm {
+    padding: 0 6rem !important;
+}
+
+
 .social-networks-mobile {
     display: none !important;
 }
@@ -377,6 +382,18 @@ body {
     .separator-img {
         margin-bottom: -10px;
     }
+}
+
+
+@media (max-width: 767.98px) {
+    .contact-frm {
+        padding: 0 0 !important;
+    }
+
+    .contact-txt {
+        font-size: 12px !important;
+    }
+
 }
 
 
