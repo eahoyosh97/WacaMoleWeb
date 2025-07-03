@@ -52,6 +52,9 @@
     </header>
     <!-- / Header -->
 
+    <div class="separator-img">
+        <img src="assets/img/separator.jpg" alt="Separador" class="img-fluid w-100">
+    </div>
 
     <!-- Contact Container -->
     <section class="menu-background" style="padding-top: 3rem !important;">
@@ -86,6 +89,12 @@
                                 style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;"></textarea>
                     </div>
 
+                    <div id="formLoader" style="display: none; text-align: center; margin-bottom: 1rem;">
+                        <span style="font-family: 'LilitaOne', sans-serif; color: #D70026;">Sending message...</span>
+                    </div>
+
+                    <div id="formMessage" style="display: none; text-align: center; margin-bottom: 1rem; font-family: 'LilitaOne', sans-serif;"></div>
+
                     <div style="text-align: center;">
                         <button type="submit" class="btn-header"
                             style="height: 40px; padding: 0 1.5rem; background-color: #D70026; color: #ffffff; border: none; border-radius: 4px; font-size: 1.1rem; font-family: 'LilitaOne', sans-serif;">
@@ -100,8 +109,8 @@
             <img src="assets/img/separator-menu_02.jpg" alt="Separador" class="img-fluid w-100">
         </div>
     </section>
-    <!-- / Contact Container -->
-
+    <!-- / Contact Container -->    
+     
 
     <div class="separator-img">
         <img src="assets/img/separator.jpg" alt="Separador" class="img-fluid w-100">
@@ -200,54 +209,10 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="assets/js/contact-form.js"></script>
     <!-- / Scripts -->
 
-    <script>
-        function isValidEmail(email) {
-            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return regex.test(email);
-        }
-
-
-        // Inicializa EmailJS (reemplaza con tu USER ID)
-        (function() {
-            emailjs.init("TU_PUBLIC_KEY_DE_EMAILJS");
-        })();
-
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            const name = document.getElementById("name").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const subject = document.getElementById("subject").value.trim();
-            const message = document.getElementById("message").value.trim();
-
-            if (!email || !message) {
-                alert("Please fill out all required fields (Email and Message).");
-                return;
-            }
-
-            if (!isValidEmail(email)) {
-                alert("Please enter a valid email address.");
-                return;
-            }
-
-            const params = {
-                from_name: name || "Anonymous",
-                from_email: email,
-                subject: subject || "(No Subject)",
-                message: message
-            };
-
-            // Enviar el correo (reemplaza serviceID y templateID con los tuyos)
-            emailjs.send("TU_SERVICE_ID", "TU_TEMPLATE_ID", params).then(function(response) {
-                alert("Message sent successfully!");
-                document.getElementById("contactForm").reset();
-            }, function(error) {
-                alert("Failed to send message. Please try again later.");
-                console.error("EmailJS error:", error);
-            });
-        });
-    </script>
 </body>
 
 </html>
