@@ -137,51 +137,6 @@ body, ul, li, p, a, label, input, div {
 /* Contact map */
 .leaflet-control a, .leaflet-control { font-size: 10px !important;}
 .form-control { border: 1px solid #e8e8e8;}
-/* Footer */
-#tempaltemo_footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 600px;
-  background-image: url('../img/footer-background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: white;
-  position: relative;
-}
-
-#tempaltemo_footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-}
-
-#tempaltemo_footer a { color: #f6f6f6;}
-#tempaltemo_footer a:hover { color: #F7C600;}
-
-#tempaltemo_footer ul.footer-icons li {
-  width: 2.6em;
-  height: 2.6em;
-  line-height: 2.6em;
-}
-#tempaltemo_footer ul.footer-icons li:hover {
-  background-color: #cfd6e1;
-  transition: .5s;
-}
-#tempaltemo_footer ul.footer-icons li:hover i {
-  color: #212934;
-  transition: .5s;
-}
-#tempaltemo_footer .border-light { border-color: #2d343f !important;}
-/*
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
-*/
 /* Small devices (landscape phones, 576px and up)*/
 .product-wap .h3, .product-wap li, .product-wap i, .product-wap p {
   font-size: 12px !important;
