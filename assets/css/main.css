@@ -204,10 +204,11 @@ body {
 
     .nav-link:hover {
         color: var(--purple);
+        transform: scale(1.15);
     }
 
 .nav-link.active {
-    transform: scale(1.10);
+    transform: scale(1.15);
     font-weight: bold;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.4)
 }
@@ -434,6 +435,7 @@ body {
 .footer-item:hover {
     background-image: url('../../assets/img/btn-yellow-container.png');
     color: var(--yellow) !important;
+    -webkit-text-stroke: 1px currentColor;
 }
 
 .footer-overlay {
@@ -452,8 +454,6 @@ body {
 
 .footer-link-list li {
     margin-bottom: 0.8rem;
-    font-weight: 700;
-    -webkit-text-stroke: 1px currentColor;
 }
 
 .footer-box {
@@ -615,7 +615,7 @@ body {
 
 .hero-btn {
     background-color: var(--yellow);
-    color: var(--purple);
+    color: var(--black);
     padding: 1.2rem 2.5rem;
     border-radius: 10px;
     text-decoration: none;
