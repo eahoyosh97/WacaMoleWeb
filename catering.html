@@ -2,319 +2,337 @@
 <html lang="en">
 
 <head>
-    <title>Cathering - Waca Mole</title>
+    <title>Catering - Waca Mole</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/LogoW.png">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/catering.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-    <style>
-        .faqs-label {
-            display: inline-block;
-            padding: 0.2rem 0.8rem;
-            background-color: transparent;
-            color: #65176F;
-            font-weight: bold;
-            font-family: sans-serif;
-            border: 2px solid #FEE934;
-            border-top-right-radius: 30px;
-            letter-spacing: 1px;
-        }
-
-        .faq-container {
-            display: flex;
-            align-items: center;
-            padding: 8px 12px;
-            max-width: 500px;
-            box-sizing: border-box;
-        }
-
-        .faq-input {
-            flex-grow: 1;
-            border: none;
-            background: transparent;
-            font-size: 16px;
-            outline: none;
-            padding: 6px 8px;
-            border-radius: 5px;
-            box-shadow: inset 0 0 6px #ccc;
-            margin-left: 20px;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body style="background-color: #65176F;">
+<body>
     <!-- Header -->
     <header class="header">
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
         <div class="logo">
             <a href="index.html">
-                <img src="assets/img/LogoWacaMoleYellow.png" alt="Waca Mole Logo">    
+                <img src="assets/img/HeaderLogo.png" alt="Waca Mole Logo">    
             </a>
         </div>
-
-        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
         <div class="menu-overlay"></div>
-
         <nav class="nav">
             <button class="menu-close" aria-label="Close menu">&times;</button>
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="menu.html" class="nav-link">Menu</a>
-            <a href="catering.html" class="nav-link">Catering</a>
-            <a href="events.html" class="nav-link">Book Us</a>
-            <a href="https://linktr.ee/wacamole_nashville?fbclid=PAZXh0bgNhZW0CMTEAAacxvxTtnyzGuOSzLywkHcLfSrfWh6RGsu-m18Wyu7A9xIWMMNM-iKwOiWW5nw_aem_4qF_QTba_aNsNGQoUMNtgg" target="_blank" class="nav-link">Locations</a>
-            <a class="btn-header" href="https://linktr.ee/wacamole_nashville?fbclid=PAZXh0bgNhZW0CMTEAAacxvxTtnyzGuOSzLywkHcLfSrfWh6RGsu-m18Wyu7A9xIWMMNM-iKwOiWW5nw_aem_4qF_QTba_aNsNGQoUMNtgg" target="_blank">Order Now</a>
+            <div class="nav-left">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="catering.html" class="nav-link">Catering</a>
+            </div>
+            <div class="logo logo-desktop">
+                <a href="index.html">
+                    <img src="assets/img/HeaderLogo.png" alt="Waca Mole Logo">    
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="https://linktr.ee/wacamole_nashville?fbclid=PAZXh0bgNhZW0CMTEAAacxvxTtnyzGuOSzLywkHcLfSrfWh6RGsu-m18Wyu7A9xIWMMNM-iKwOiWW5nw_aem_4qF_QTba_aNsNGQoUMNtgg" target="_blank" class="nav-link">Locations</a>
+                <a class="btn-header" href="https://linktr.ee/wacamole_nashville?fbclid=PAZXh0bgNhZW0CMTEAAacxvxTtnyzGuOSzLywkHcLfSrfWh6RGsu-m18Wyu7A9xIWMMNM-iKwOiWW5nw_aem_4qF_QTba_aNsNGQoUMNtgg" target="_blank">Order Now</a>
+            </div>
         </nav>
     </header>
     <!-- / Header -->
 
-    <!-- Banner Hero -->
-    <section class="banner-static">
-        <div class="carousel-image-wrapper">
-            <img src="assets/img/banner-img-catering.jpg" class="d-block w-100 banner-img" alt="Taco Tuesday">
-        </div>
-        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-            <h1 class="display-2 main-title-banner" style="font-family: 'LilitaOne', sans-serif;">Catering</h1>
-            <br>
-            <a href="https://www.ezcater.com/catering/wakamole-mexican-food-3?fulfillmentDetailId=5ef29eb5-eff1-45c8-a555-3026d16cf8d4" target="_blank" class="btn-header cathering-btn-main">Book your catering</a>
-        </div>
-    </section>
-    <!-- / Banner Hero -->
-
-    <div class="separator-img">
-        <img src="assets/img/separator.jpg" alt="Separador" class="img-fluid w-100">
-    </div>
-
-    <!-- Main Container -->
-    <section class="container py-5">
-        <div class="row text-center pt-3">
-            <div class="col-lg-8 m-auto">
-                <h1 class="display-4" style="font-family: 'LilitaOne', sans-serif; color: #ffffff;">Wacamole Catering:</h1>
-                <h1 class="display-6" style="font-family: 'LilitaOne', sans-serif; color: #ffffff;">Authentic Mexican Flavor for Your Events</h1>
-                <p class="mt-3 mb-4" style="color: #f6f6f6;">
-                    Looking for catering that combines <strong>autentic Mexican flavors, premium quality, and full customization?</strong><br>
-                    At <strong>Wacamole</strong>, we bring our passion for Mexican cuisine to every event, offering a unique culinary experience with fresh ingredients and irresistible presentations.
-                </p>
+    <!-- Banner Principal -->
+    <section class="banner-static banner-catering position-relative">
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-12 text-center banner-content">
+                    <div class="banner-content-container">
+                        <h2 class="banner-content-title">CATERING</h2>
+                        <div class="mt-3" style="width: 100%;">
+                            <a href="https://linktr.ee/wacamole_nashville?fbclid=PAZXh0bgNhZW0CMTEAAacxvxTtnyzGuOSzLywkHcLfSrfWh6RGsu-m18Wyu7A9xIWMMNM-iKwOiWW5nw_aem_4qF_QTba_aNsNGQoUMNtgg" 
+                                class="btn btn-warning btn-lg hero-btn" style="width: 85%;">BOOK YOUR CATERING</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- / Main Container -->
+    <!-- / Banner Principal -->
 
-    <div class="separator-img">
-        <img src="assets/img/separator-menu_01.jpg" alt="Separador" class="img-fluid w-100">
+
+    <div class="wave-separator-top">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 L12,60 Q27,120 42,60 L54,60 Q69,120 84,60 L96,60 Q111,120 126,60 L138,60 Q153,120 168,60 L180,60 Q195,120 210,60 L222,60 Q237,120 252,60 L264,60 Q279,120 294,60 L306,60 Q321,120 336,60 L348,60 Q363,120 378,60 L390,60 Q405,120 420,60 L432,60 Q447,120 462,60 L474,60 Q489,120 504,60 L516,60 Q531,120 546,60 L558,60 Q573,120 588,60 L600,60 Q615,120 630,60 L642,60 Q657,120 672,60 L684,60 Q699,120 714,60 L726,60 Q741,120 756,60 L768,60 Q783,120 798,60 L810,60 Q825,120 840,60 L852,60 Q867,120 882,60 L894,60 Q909,120 924,60 L936,60 Q951,120 966,60 L978,60 Q993,120 1008,60 L1020,60 Q1035,120 1050,60 L1062,60 Q1077,120 1092,60 L1104,60 Q1119,120 1134,60 L1146,60 Q1161,120 1176,60 L1188,60 Q1203,120 1218,60 L1230,60 Q1245,120 1260,60 L1272,60 Q1287,120 1302,60 L1314,60 Q1329,120 1344,60 L1356,60 Q1371,120 1386,60 L1398,60 Q1413,120 1428,60 L1440,60 L1440,120 L0,120 Z" 
+                fill="#F2B741"/>
+        </svg>
     </div>
 
-    <!-- How it Works Container -->
-    <section class="menu-background" style="padding-top: 3rem !important;">
-        <div class="container px-5 text-left">
-            <div class="mb-5 catherine-container">
-                <h2 style="font-family: 'LilitaOne', sans-serif; color: #D70026; font-weight: 800;">How It Works</h2>
-                <p style="font-family: 'LilitaOne', sans-serif; font-weight: 700; color: #D70026;">Hassle-Free Catering in 4 Simple Steps</p>
-                <p style="max-width: 700px;">Our catering process is designed to be <strong>easy, flexible, and stress-free.</strong> Here’s how it works:</p>
     
-                <div class="row text-start mt-5">
-                    <div class="col-md-6 mb-4">
-                        <div>
-                            <img src="assets/img/how-order-step1.png" alt="Step 1 Icon" style="width: 280px; height: auto; vertical-align: middle;">
-                        </div>
-                        <p style="width: 400px;">Select from our variety of <strong>authentic Mexican dishes</strong>, including tacos, quesadillas, guacamole, and more. Customize your selection to fit your event’s theme and guest preferences.</p>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div>
-                            <img src="assets/img/how-order-step3.png" alt="Step 2 Icon" style="width: 280px; height: auto; vertical-align: middle;">
-                        </div>
-                        <p style="width: 350px;">We bring the full Wacamole experience to you! Choose between our <strong>food truck setup or buffet-style catering</strong>, and we’ll handle everything—from cooking to serving.</p>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div>
-                            <img src="assets/img/how-order-step2.png" alt="Step 3 Icon" style="width: 280px; height: auto; vertical-align: middle;">
-                        </div>
-                        <p style="width: 380px;">Select from our variety of <strong>authentic Mexican dishes</strong>, including tacos, quesadillas, guacamole, and more. Customize your selection to fit your event’s theme and guest preferences.</p>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div>
-                            <img src="assets/img/how-order-step4.png" alt="Step 4 Icon" style="width: 350px; height: auto; vertical-align: middle;">
-                        </div>
-                        <p style="width: 360px;">Sit back and <strong>enjoy the flavors of Mexico</strong> while we ensure seamless service. Your guests will love the authentic taste and vibrant presentation.</p>
+    <!-- Sección Catering -->
+    <section class="info-section-catering">
+        <div class="container" style="width: 65%; margin-bottom: 20px;">
+            <div class="row g-0 align-items-stretch catering-wrapper">
+                <div class="col-md-5 catering-left">
+                    <h2 class="catering-title">WACAMOLE</h2>
+                    <h2 class="catering-title">CATERING</h2>
+
+                    <div class="catering-divider-block">
+                        <div class="divider-line"></div>
+                        <p class="catering-subtitle-info">Authentic Mexican Flavor<br>for Your Events</p>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="separator-img">
-            <img src="assets/img/separator-menu_02.jpg" alt="Separador" class="img-fluid w-100">
-        </div>
-    </section>
-    <!-- / How it Works Container -->
+                <div class="col-md-7 catering-right">
+                    <div class="catering-box">
+                        <p>
+                            Let us bring the flavor of Wacamole straight to your event.
+                            Our Catering Service is perfect for weddings, corporate gatherings,
+                            private parties, and festivals.
+                        </p>
 
-    <!-- Choose Service Section -->
-    <section class="py-1" style="background-color: #F21C43; padding-top: 3rem !important;">
-        <div class="container px-5 text-left">
-            <div class="mb-5 catherine-container">
-                <h2 style="font-family: 'LilitaOne', sans-serif; color: #ffffff; font-weight: 800; letter-spacing: 2px;">Why Choose Our<br>Catering Service?</h2>
-
-                <div class="row text-start mt-5">
-                    <div class="col-md-6 mb-4" style="margin-bottom: 40px !important;">
-                        <div style="padding-bottom: 10px;">
-                            <img src="assets/img/why-choose-title1.png" alt="Step 1 Icon" style="width: auto; height: 40px; vertical-align: middle;">
-                        </div>
-                        <p class="text-choose-service">From <strong>Mexican street food</strong> to gourmet dishes, we tailor each menu to your event and preferences.</p>
-                        <img src="assets/img/catering-service-img1.jpg" class="product-img" alt="Quesabirria">
-                    </div>
-                    <div class="col-md-6 mb-4" style="margin-bottom: 20px !important;">
-                        <div style="padding-bottom: 10px;">
-                            <img src="assets/img/why-choose-title2.png" alt="Step 2 Icon" style="width: auto; height: 40px; vertical-align: middle;">
-                        </div>
-                        <p class="text-choose-service">We bring our <strong>food truck</strong> or set up food stations at your venue for a dynamic and engaging service.</p>
-                        <img src="assets/img/catering-service-img2.jpg" class="product-img" alt="Quesabirria">
-                    </div>
-                    <div class="col-md-6 mb-4" style="margin-bottom: 20px !important;">
-                        <div style="padding-bottom: 10px;">
-                            <img src="assets/img/why-choose-title3.png" alt="Step 3 Icon" style="width: auto; height: 40px; vertical-align: middle;">
-                        </div>
-                        <p class="text-choose-service">We cater to <strong>weddings, corporate events, private parties, and festivals</strong>.</p>
-                        <img src="assets/img/catering-service-img3.jpg" class="product-img" alt="Quesabirria">
-                    </div>
-                    <div class="col-md-6 mb-4" style="margin-bottom: 20px !important;">
-                        <div style="padding-bottom: 10px;">
-                            <img src="assets/img/why-choose-title4.png" alt="Step 4 Icon" style="width: auto; height: 40px; vertical-align: middle;">
-                        </div>
-                        <p class="text-choose-service">Fresh ingredients and traditional recipes for an unbeatable taste.</p>
-                        <img src="assets/img/catering-service-img4.jpg" class="product-img" alt="Quesabirria">
+                        <p>
+                            We deliver your favorite dishes — fresh, ready to serve, and full of
+                            authentic Mexican sabor — right to your venue.
+                            You take care of the celebration; we’ll take care of the food.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- / Choose Service Section -->
 
-    <div class="separator-img">
-        <img src="assets/img/separator-menu_02.jpg" alt="Separador" class="img-fluid w-100">
-    </div>
 
-    <!-- FAQs Section -->
-    <section class="py-1" style="background-color: #ffffff;">
-        <div class="container px-5 text-center">
-            <div class="mb-5 catherine-container" style="padding-top: 2rem !important;">
-                <h1 class="display-6" style="font-family: 'LilitaOne', sans-serif; color: #65176F;">Events We Cater To:</h1>
-                <!-- <h2 style="font-family: 'LilitaOne', sans-serif; color: #65176F; font-weight: 800; letter-spacing: 2px;">Events We Cater To:</h2> -->
+    <!-- Sección How it works -->
+    <section class="main-section-catering">
+        <div class="row g-0 align-items-stretch" style="width: 65%; margin-bottom: 20px;">
+            <h2 class="banner-content-title color-black">HOW IT WORKS</h2>
+            <p class="catering-subtitle">Hassle-free sathering in 3 simple steps</p>
+            <p class="catering-description">Our catering process is designed to be easy, flexible, and stress-free. Here's how it works:</p>
 
-                <div class="row text-start mt-4 d-none d-md-flex">
-                    <div class="col-md-3"><label class="faqs-label">Weddings</label></div>
-                    <div class="col-md-3"><label class="faqs-label">Corporate Events</label></div>
-                    <div class="col-md-3"><label class="faqs-label">Private Parties</label></div>
-                    <div class="col-md-3"><label class="faqs-label">Festivals & Fairs</label></div>
-                </div>
+            <div class="row justify-content-center how-cards margin-top-add-4">
+                <div class="col-md-6 col-lg-4 how-card">
+                    <div class="how-sticker">
+                        <img src="assets/img/catering/catering-step-1.png" alt="Step 1">
+                    </div>
 
-                <div class="d-md-none">
-                    <div class="vertical-stack">
-                        <span class="faqs-label">Weddings</span>
-                        <span class="faqs-label">Corporate Events</span>
-                        <span class="faqs-label">Private Parties</span>
-                        <span class="faqs-label">Festivals & Fairs</span>
+                    <div class="how-top">
+                        <h3 class="how-title">Choose your menu</h3>
+                    </div>
+                    
+                    <div class="how-separator-card">
+                        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0,60 L12,60 Q27,120 42,60 L54,60 Q69,120 84,60 L96,60 Q111,120 126,60 L138,60 Q153,120 168,60 L180,60 Q195,120 210,60 L222,60 Q237,120 252,60 L264,60 Q279,120 294,60 L306,60 Q321,120 336,60 L348,60 Q363,120 378,60 L390,60 Q405,120 420,60 L432,60 Q447,120 462,60 L474,60 Q489,120 504,60 L516,60 Q531,120 546,60 L558,60 Q573,120 588,60 L600,60 Q615,120 630,60 L642,60 Q657,120 672,60 L684,60 Q699,120 714,60 L726,60 Q741,120 756,60 L768,60 Q783,120 798,60 L810,60 Q825,120 840,60 L852,60 Q867,120 882,60 L894,60 Q909,120 924,60 L936,60 Q951,120 966,60 L978,60 Q993,120 1008,60 L1020,60 Q1035,120 1050,60 L1062,60 Q1077,120 1092,60 L1104,60 Q1119,120 1134,60 L1146,60 Q1161,120 1176,60 L1188,60 Q1203,120 1218,60 L1230,60 Q1245,120 1260,60 L1272,60 Q1287,120 1302,60 L1314,60 Q1329,120 1344,60 L1356,60 Q1371,120 1386,60 L1398,60 Q1413,120 1428,60 L1440,60 L1440,120 L0,120 Z" 
+                                fill="#FBECD4"/>
+                        </svg>
+                    </div>
+
+                    <div class="how-bottom">
+                        <p>
+                            Pick from our delicious Mexican dishes: tacos, burritos, bowls, churros and more.
+                            We’ve got something for every taste and every event.  
+                            You decide the flavor of your celebration!
+                        </p>
                     </div>
                 </div>
 
-                <br><br>
-                
-                <div class="faq-container mx-auto">
-                    <h1 class="display-6" style="font-family: 'LilitaOne', sans-serif; color: #65176F;">FAQs</h1>
-                    <input type="text" class="faq-input" placeholder="" />
+                <div class="col-md-6 col-lg-4 how-card">
+                    <div class="how-sticker">
+                        <img src="assets/img/catering/catering-step-2.png" alt="Step 2">
+                    </div>
+
+                    <div class="how-top">
+                        <h3 class="how-title">Customize your order</h3>
+                    </div>
+
+                    <div class="how-separator-card">
+                        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0,60 L12,60 Q27,120 42,60 L54,60 Q69,120 84,60 L96,60 Q111,120 126,60 L138,60 Q153,120 168,60 L180,60 Q195,120 210,60 L222,60 Q237,120 252,60 L264,60 Q279,120 294,60 L306,60 Q321,120 336,60 L348,60 Q363,120 378,60 L390,60 Q405,120 420,60 L432,60 Q447,120 462,60 L474,60 Q489,120 504,60 L516,60 Q531,120 546,60 L558,60 Q573,120 588,60 L600,60 Q615,120 630,60 L642,60 Q657,120 672,60 L684,60 Q699,120 714,60 L726,60 Q741,120 756,60 L768,60 Q783,120 798,60 L810,60 Q825,120 840,60 L852,60 Q867,120 882,60 L894,60 Q909,120 924,60 L936,60 Q951,120 966,60 L978,60 Q993,120 1008,60 L1020,60 Q1035,120 1050,60 L1062,60 Q1077,120 1092,60 L1104,60 Q1119,120 1134,60 L1146,60 Q1161,120 1176,60 L1188,60 Q1203,120 1218,60 L1230,60 Q1245,120 1260,60 L1272,60 Q1287,120 1302,60 L1314,60 Q1329,120 1344,60 L1356,60 Q1371,120 1386,60 L1398,60 Q1413,120 1428,60 L1440,60 L1440,120 L0,120 Z" 
+                                fill="#FBECD4"/>
+                        </svg>
+                    </div>
+
+                    <div class="how-bottom">
+                        <p>
+                            Adjust your order based on your event size, preference, or guests’ needs.
+                            We can tailor portions, flavors, and presentation to make everything just right.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 how-card">
+                    <div class="how-sticker">
+                        <img src="assets/img/catering/catering-step-3.png" alt="Step 3">
+                    </div>
+
+                    <div class="how-top">
+                        <h3 class="how-title">Enjoy delicious<br>Mexican Cuisine!</h3>
+                    </div>
+
+                    <div class="how-separator-card">
+                        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0,60 L12,60 Q27,120 42,60 L54,60 Q69,120 84,60 L96,60 Q111,120 126,60 L138,60 Q153,120 168,60 L180,60 Q195,120 210,60 L222,60 Q237,120 252,60 L264,60 Q279,120 294,60 L306,60 Q321,120 336,60 L348,60 Q363,120 378,60 L390,60 Q405,120 420,60 L432,60 Q447,120 462,60 L474,60 Q489,120 504,60 L516,60 Q531,120 546,60 L558,60 Q573,120 588,60 L600,60 Q615,120 630,60 L642,60 Q657,120 672,60 L684,60 Q699,120 714,60 L726,60 Q741,120 756,60 L768,60 Q783,120 798,60 L810,60 Q825,120 840,60 L852,60 Q867,120 882,60 L894,60 Q909,120 924,60 L936,60 Q951,120 966,60 L978,60 Q993,120 1008,60 L1020,60 Q1035,120 1050,60 L1062,60 Q1077,120 1092,60 L1104,60 Q1119,120 1134,60 L1146,60 Q1161,120 1176,60 L1188,60 Q1203,120 1218,60 L1230,60 Q1245,120 1260,60 L1272,60 Q1287,120 1302,60 L1314,60 Q1329,120 1344,60 L1356,60 Q1371,120 1386,60 L1398,60 Q1413,120 1428,60 L1440,60 L1440,120 L0,120 Z" 
+                                fill="#FBECD4"/>
+                        </svg>
+                    </div>
+
+                    <div class="how-bottom">
+                        <p>
+                            Sit back and enjoy the flavors of Mexico while we ensure seamless service.
+                            Your guests will love the authentic taste and vibrant presentation.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- / FAQs Section -->
 
-    <div class="separator-img">
-        <img src="assets/img/separator.jpg" alt="Separador" class="img-fluid w-100">
-    </div>
+
+    <!-- Sección Events -->
+     <section class="info-section-catering">
+        <div class="container" style="width: 65%; margin-bottom: 20px;">
+            <h2 class="catering-subtitle color-black">EVENTS WE CATER TO</h2>
+
+            <div class="events-grid">
+                <div class="event-box">Weddings</div>
+                <div class="event-box">Corporate events</div>
+                <div class="event-box">Private parties</div>
+                <div class="event-box">Festivals & fairs</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección Book your catering -->
+    <section class="main-section-catering">
+        <div class="row g-0 align-items-stretch" style="width: 40%; margin-bottom: 20px;">
+            <h2 class="catering-subtitle color-black">BOOK YOUR CATERING</h2>
+
+            <form class="catering-form">
+                <div class="form-group">
+                    <label for="fullName">Full name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventType">Event type</label>
+                    <input type="text" id="eventType" name="eventType" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="people">Number of people</label>
+                    <input type="number" id="people" name="people" min="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Event details</label>
+                    <textarea id="details" name="details" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="catering-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
-        <div class="footer-overlay">
+        <div class="footer-purple-section">
             <div class="container-md">
-                <div class="row align-items-center">
-                    <div class="col-6 col-md-6 mb-4 mb-md-0">
-                        <div class="footer-box rounded">
-                            <div class="row">
-                                <div class="col menu-options">
-                                    <h2 class="footer-title">About</h2>
-                                    <ul class="list-unstyled text-light footer-link-list">
-                                        <li><a class="text-decoration-none footer-item" href="menu.html">Menu</a></li>
-                                        <li><a class="text-decoration-none footer-item" href="https://linktr.ee/wacamole_nashville?fbclid=PAZXh0bgNhZW0CMTEAAacxvxTtnyzGuOSzLywkHcLfSrfWh6RGsu-m18Wyu7A9xIWMMNM-iKwOiWW5nw_aem_4qF_QTba_aNsNGQoUMNtgg" target="_blank">Locations</a></li>
-                                        <li><a class="text-decoration-none footer-item" href="catering.html">Cathering</a></li>
-                                        <li><a class="text-decoration-none footer-item" href="events.html">Book Us</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col">
-                                    <h2 class="footer-title">About</h2>
-                                    <ul class="list-unstyled text-light footer-link-list">
-                                        <li><a class="text-decoration-none footer-item" href="how-to-order.html">How to Order</a></li>
-                                        <li><a class="text-decoration-none footer-item" href="our-product.html">Our Product</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col">
-                                    <h2 class="footer-title">Other</h2>
-                                    <ul class="list-unstyled text-light footer-link-list">
-                                        <li><a class="text-decoration-none footer-item" href="contact.html">Contact Us</a></li>
-                                        <li><a class="text-decoration-none footer-item" href="#">Help</a></li>
-                                        <li class="social-networks-other">
-                                            <div class="mt-3">
-                                                <p class="footer-social-handle">@wacamole_nashville</p>
-                                                <div class="d-flex gap-3">
-                                                    <a href="https://www.facebook.com/profile.php?id=100093065242375" target="_blank" class="text-light fs-5">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                    </a>
-                                                    <a href="https://instagram.com/wacamole_nashville" target="_blank" class="text-light fs-5">
-                                                        <i class="fab fa-instagram"></i>
-                                                    </a>
-                                                    <a href="https://tiktok.com/@wacamole.nashvill" target="_blank" class="text-light fs-5">
-                                                        <i class="fab fa-tiktok"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
+                <div class="row align-items-start justify-content-between">
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <h2 class="footer-title">ABOUT</h2>
+                                <ul class="list-unstyled text-light footer-link-list">
+                                    <li><a class="text-decoration-none footer-item" href="menu.html">Menu</a></li>
+                                    <li><a class="text-decoration-none footer-item" href="https://linktr.ee/wacamole_nashville..." target="_blank">Locations</a></li>
+                                    <li><a class="text-decoration-none footer-item" href="catering.html">Catering</a></li>
+                                    <li><a class="text-decoration-none footer-item" href="events.html">Book Us</a></li>
+                                </ul>
                             </div>
+                            <div class="col-4 text-center">
+                                <h2 class="footer-title">ABOUT</h2>
+                                <ul class="list-unstyled text-light footer-link-list">
+                                    <li><a class="text-decoration-none footer-item" href="how-to-order.html">How to order</a></li>
+                                    <li><a class="text-decoration-none footer-item" href="our-product.html">Our Product</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4 text-center">
+                                <h2 class="footer-title">OTHER</h2>
+                                <ul class="list-unstyled text-light footer-link-list">
+                                    <li><a class="text-decoration-none footer-item" href="contact.html">Contact Us</a></li>
+                                    <li><a class="text-decoration-none footer-item" href="#">Help</a></li>
+                                    <li class="social-networks-other">
+                                        <div class="mt-3">
+                                            <p class="footer-social-handle">@wacamole_nashville</p>
+                                            <div class="d-flex gap-3 justify-content-center">
+                                                <a href="https://www.facebook.com/profile.php?id=100093065242375" target="_blank" class="text-light fs-5">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                                <a href="https://instagram.com/wacamole_nashville" target="_blank" class="text-light fs-5">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                                <a href="https://tiktok.com/@wacamole.nashvill" target="_blank" class="text-light fs-5">
+                                                    <i class="fab fa-tiktok"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-                            <div class="row text-left social-networks-mobile">
-                                <div class="mt-3">
-                                    <p class="footer-social-handle">@wacamole_nashville</p>
-                                    <div class="d-flex gap-3">
-                                        <a href="https://www.facebook.com/profile.php?id=100093065242375" target="_blank" class="text-light fs-5">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                        <a href="https://instagram.com/wacamole_nashville" target="_blank" class="text-light fs-5">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                        <a href="https://tiktok.com/@wacamole.nashvill" target="_blank" class="text-light fs-5">
-                                            <i class="fab fa-tiktok"></i>
-                                        </a>
-                                    </div>
+                        <div class="row text-left social-networks-mobile">
+                            <div class="mt-3">
+                                <p class="footer-social-handle">@wacamole_nashville</p>
+                                <div class="d-flex gap-3 justify-content-center">
+                                    <a href="https://www.facebook.com/profile.php?id=100093065242375" target="_blank" class="text-light fs-5">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://instagram.com/wacamole_nashville" target="_blank" class="text-light fs-5">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://tiktok.com/@wacamole.nashvill" target="_blank" class="text-light fs-5">
+                                        <i class="fab fa-tiktok"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-6 col-md-6 d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="d-flex flex-wrap justify-content-center gap-2 mb-2 footer-btns">
-                            <a href="https://maps.app.goo.gl/M6jnuR1wFbZ7Tpx68?g_st=com.google.maps.preview.copy" target="_blank" class="footer-btn d-flex align-items-center gap-2" style="text-decoration: none;">
-                                <img src="assets/img/footer-btn-home.png" alt="Home base icon" class="icon img-fluid" style="max-width: 14rem;" />
+                    <div class="col-12 col-md-5 d-flex flex-column align-items-end">
+                        <div class="d-flex flex-row gap-2 mb-3 footer-btns">
+                            <a href="https://maps.app.goo.gl/M6jnuR1wFbZ7Tpx68..." target="_blank" class="footer-btn">
+                                <img src="assets/img/footer-btn-home.png" alt="Home base icon" class="img-fluid" />
                             </a>
-                            <a href="https://streetfoodfinder.com/wacamolemexicanfood" target="_blank" class="footer-btn d-flex align-items-center gap-2" style="text-decoration: none;">
-                                <img src="assets/img/footer-btn-chasing.png" alt="Chasing Nashville's beat icon" class="icon img-fluid" style="max-width: 14rem;" />
+                            <a href="https://streetfoodfinder.com/wacamolemexicanfood" target="_blank" class="footer-btn">
+                                <img src="assets/img/footer-btn-chasing.png" alt="Chasing Nashville's beat icon" class="img-fluid" />
                             </a>
                         </div>
-                        <p class="footer-quote" style="font-family: 'LilitaOne', sans-serif;">Let’s taco ’bout it.</p>
+                        
+                        <p class="footer-quote">LET'S TACO 'BOUT IT.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-yellow-section">
+            <div class="container-md">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-auto">
+                        <img src="assets/img/LogoWacaMolePurple.png" alt="Waca Mole Logo" class="footer-logo" />
                     </div>
                 </div>
             </div>

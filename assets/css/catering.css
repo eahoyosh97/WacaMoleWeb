@@ -1,0 +1,357 @@
+.banner-catering {
+    background-image: url('../img/catering/catering-banner-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-catering::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 1;
+}
+.banner-catering .container {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-content-container {
+    padding: 3rem 2.5rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.banner-content-title {
+    color: var(--white);
+    font-family: 'Anton', sans-serif !important;
+    font-size: 8rem !important;
+    font-weight: 400 !important;
+    text-align: center;
+}
+
+.info-section-catering {
+    background-color: var(--yellow);
+    padding: 4rem 0;
+}
+
+.catering-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.catering-left,
+.catering-right {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+
+.catering-left {
+    padding: 2rem 3rem;
+}
+
+.catering-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #000;
+}
+
+.catering-divider-block {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.divider-line {
+    width: 5px;
+    background-color: #000;
+    height: 90px;
+    border-radius: 10px;
+}
+
+.catering-subtitle-info {
+    margin: 0;
+    text-align: left;
+    font-size: 2rem !important;
+    color: #000;
+    line-height: 1.2;
+    font-family: 'Anton', sans-serif;
+}
+
+.catering-subtitle {
+    margin: 0;
+    text-align: center;
+    font-size: 3rem !important;
+    color: #000;
+    line-height: 1.2;
+    font-family: 'Anton', sans-serif;
+}
+
+.catering-description {
+    text-align: center;
+    max-width: 450px !important;
+    margin: 0 auto;
+    font-size: 1.8rem !important;
+    font-family: 'Amatic SC', cursive;
+    -webkit-text-stroke: 1px currentColor;
+}
+
+.catering-right {
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.catering-box {
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 25px;
+    padding: 2.5rem;
+    line-height: 1.4;
+}
+
+.catering-box p {
+    font-weight: bold !important;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.6rem !important;
+    -webkit-text-stroke: 1px currentColor;
+}
+
+.catering-box p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .catering-title {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .catering-divider-block {
+        justify-content: center;
+    }
+
+    .catering-right {
+        padding-top: 0;
+    }
+}
+
+.main-section-catering {
+  z-index: 1;
+  position: relative;
+  background-color: var(--beige);
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* How it works */
+.how-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    justify-items: center;
+}
+
+.how-cards > .how-card:nth-child(3) {
+    grid-column: span 2;
+    width: 30rem !important;
+    margin: 0 auto;
+}
+
+.how-card {
+    height: 30rem;
+    width: 30rem !important;
+    position: relative;
+    border: 2px solid #000;
+    padding: 0 !important;
+}
+
+.how-separator-card {
+    width: 100%;
+    line-height: 0;
+    overflow: hidden;
+    margin-top: -30px;
+    position: relative;
+    z-index: 10;
+}
+
+.how-separator-card svg {
+    width: 100%;
+    height: 30px;
+    display: block;
+}
+
+.how-sticker {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.how-sticker img {
+    width: 90px;
+    height: auto;
+    display: block;
+}
+
+.how-top {
+    height: 50%;
+    background: #66147A;
+    padding: 1.2rem 1rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-title {
+    color: var(--beige);
+    font-family: 'Anton', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.how-bottom {
+    height: 50% ;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-bottom p {
+    margin: 0;
+    font-weight: bold !important;
+    letter-spacing: 1.6px;
+    font-family: 'Amatic SC', cursive;
+    line-height: 1;
+    font-size: 1.6rem !important;
+    -webkit-text-stroke: 1px currentColor;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.event-box {
+    border: 2px solid var(--black);
+    text-align: center;
+    font-size: 1.4rem !important;
+    font-weight: bold !important;
+    border-radius: 10px;
+    font-family: 'Amatic SC', cursive;
+    -webkit-text-stroke: 0.5px currentColor;
+}
+
+@media (max-width: 767px) {
+    .how-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Form Section */
+.catering-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.catering-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.catering-form .form-group label {
+    font-size: 1.6rem !important;
+    font-weight: bold !important;
+    font-family: 'Amatic SC', sans-serif !important;
+}
+
+.catering-form .form-group input {
+    height: 40px;
+}
+
+.catering-form .form-group input,
+.catering-form .form-group textarea {
+    background-color: #EBDEC8;
+    font-family: 'Anton', sans-serif !important;
+}
+
+.catering-form label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+}
+
+.catering-form input,
+.catering-form textarea {
+    border: 1px solid #ccc;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.catering-form textarea,
+.catering-btn {
+    grid-column: span 1 !important;
+}
+
+.catering-btn {
+    background: var(--yellow);
+    font-size: 1.2rem;
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: 0.2s ease;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.catering-btn:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .catering-form {
+        grid-template-columns: 1fr;
+    }
+
+    .catering-btn,
+    .catering-form textarea {
+        grid-column: span 1;
+    }
+}
+

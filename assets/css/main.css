@@ -28,13 +28,48 @@ body {
 
 :root {
     --purple: #65176F;
-    --yellow: #F7C600;
+    --yellow: #F0B432;
     --red: #F21C43;
     --white: #ffffff;
     --black: #000000;
     --gray-light: #f6f6f6;
+    --beige: #FBECD4;
 }
 
+/* Utilities */
+.padding-top-less {
+  padding-top: 10px !important;
+}
+
+.margin-top-add-2 {
+  margin-top: 2rem !important;
+}
+
+.margin-top-add-4 {
+  margin-top: 4rem !important;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0 !important;
+}
+
+.margin-bottom-added {
+  margin-bottom: 4rem !important;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0 !important;
+}
+
+.color-black {
+    color: var(--black) !important;
+}
+
+.color-beige {
+    color: #FBECD4 !important;
+}
+
+/* Home */
 .header {
     position: fixed;
     top: 0;
@@ -620,7 +655,7 @@ body {
     border-radius: 10px;
     text-decoration: none;
     font-family: 'Amatic SC', sans-serif;
-    font-size: 2rem;
+    font-size: 2rem !important;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -629,7 +664,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     width: 60%;
     text-align: center;
-    -webkit-text-stroke: 2px currentColor;
+    -webkit-text-stroke: 1px currentColor;
 }
 
 .hero-btn:hover {
@@ -789,3 +824,58 @@ body {
         max-width: 12rem !important;
     }
 }
+
+
+/* Separador */
+.wave-separator-top {
+    width: 100%;
+    line-height: 0;
+    overflow: hidden;
+    margin-top: -50px;
+    position: relative;
+    z-index: 10;
+}
+
+.wave-separator-top svg {
+    width: 100%;
+    height: 50px;
+    display: block;
+}
+
+.wave-separator-bottom {
+    width: 100%;
+    line-height: 0;
+    overflow: hidden;
+    margin-top: -60px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 10;
+}
+
+.wave-separator-bottom svg {
+    width: 100%;
+    height: 50px;
+    margin-top: 0;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .wave-separator-top {
+        margin-top: -30px;
+    }
+    
+    .wave-separator-bottom {
+        margin-top: -40px;
+        margin-bottom: 0;
+    }
+    
+    .wave-separator-top svg {
+        height: 20px;
+    }
+    
+    .wave-separator-bottom svg {
+        height: 20px;
+        margin-top: 0;
+    }
+}
+

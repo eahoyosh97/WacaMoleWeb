@@ -11,479 +11,466 @@
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Header -->
     <header class="header">
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
         <div class="logo">
             <a href="index.html">
-                <img src="assets/img/LogoWacaMoleYellow.png" alt="Waca Mole Logo">    
+                <img src="assets/img/HeaderLogo.png" alt="Waca Mole Logo">    
             </a>
         </div>
-
-        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
         <div class="menu-overlay"></div>
-
         <nav class="nav">
             <button class="menu-close" aria-label="Close menu">&times;</button>
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="menu.html" class="nav-link">Menu</a>
-            <a href="catering.html" class="nav-link">Catering</a>
-            <a href="events.html" class="nav-link">Book Us</a>
-            <a href="https://linktr.ee/wacamole_nashville?fbclid=PAZXh0bgNhZW0CMTEAAacxvxTtnyzGuOSzLywkHcLfSrfWh6RGsu-m18Wyu7A9xIWMMNM-iKwOiWW5nw_aem_4qF_QTba_aNsNGQoUMNtgg" target="_blank" class="nav-link">Locations</a>
-            <a class="btn-header" href="https://linktr.ee/wacamole_nashville?fbclid=PAZXh0bgNhZW0CMTEAAacxvxTtnyzGuOSzLywkHcLfSrfWh6RGsu-m18Wyu7A9xIWMMNM-iKwOiWW5nw_aem_4qF_QTba_aNsNGQoUMNtgg" target="_blank">Order Now</a>
+            <div class="nav-left">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="catering.html" class="nav-link">Catering</a>
+            </div>
+            <div class="logo logo-desktop">
+                <a href="index.html">
+                    <img src="assets/img/HeaderLogo.png" alt="Waca Mole Logo">    
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="https://linktr.ee/wacamole_nashville?fbclid=PAZXh0bgNhZW0CMTEAAacxvxTtnyzGuOSzLywkHcLfSrfWh6RGsu-m18Wyu7A9xIWMMNM-iKwOiWW5nw_aem_4qF_QTba_aNsNGQoUMNtgg" target="_blank" class="nav-link">Locations</a>
+                <a class="btn-header" href="https://linktr.ee/wacamole_nashville?fbclid=PAZXh0bgNhZW0CMTEAAacxvxTtnyzGuOSzLywkHcLfSrfWh6RGsu-m18Wyu7A9xIWMMNM-iKwOiWW5nw_aem_4qF_QTba_aNsNGQoUMNtgg" target="_blank">Order Now</a>
+            </div>
         </nav>
     </header>
     <!-- / Header -->
 
-    <!-- Banner Hero -->
-    <section class="banner-static">
-        <div class="carousel-image-wrapper">
-            <img src="assets/img/banner-img_02.jpg" class="d-block w-100 banner-img" alt="Taco Tuesday">
-        </div>
-        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center" style="width: 100%;">
-            <div class="container">
+    <!-- Banner Principal -->
+    <section class="banner-static position-relative">
+        <div class="banner-bg banner-bg-left"></div>
+        <div class="banner-bg banner-bg-right"></div>
+        
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-12 text-center banner-content">
+                    <div class="banner-content-box">
+                        <img src="assets/img/menu/menu-title.png" alt="Banner Title" class="img-fluid" style="max-width:250px; height:auto;">
+                        <div class="location-text-container">
+                            <h1 class="location-text">Locations</h1>
+                        </div>
+                        <div class="mt-3" style="width: 100%;">
+                            <a href="https://linktr.ee/wacamole_nashville?fbclid=PAZXh0bgNhZW0CMTEAAacxvxTtnyzGuOSzLywkHcLfSrfWh6RGsu-m18Wyu7A9xIWMMNM-iKwOiWW5nw_aem_4qF_QTba_aNsNGQoUMNtgg" 
+                                class="btn btn-warning btn-lg hero-btn" style="width: 85%;">TAKE YOUR ORDER HERE</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- / Banner Hero -->
+    <!-- / Banner Principal -->
 
-    <div class="separator-img">
-        <img src="assets/img/separator.jpg" alt="Separador" class="img-fluid w-100">
+
+    <div class="wave-separator-top">
+        <!-- <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 L0,40 Q9,0 18,40 T36,40 T54,40 T72,40 T90,40 T108,40 T126,40 T144,40 T162,40 T180,40 T198,40 T216,40 T234,40 T252,40 T270,40 T288,40 T306,40 T324,40 T342,40 T360,40 T378,40 T396,40 T414,40 T432,40 T450,40 T468,40 T486,40 T504,40 T522,40 T540,40 T558,40 T576,40 T594,40 T612,40 T630,40 T648,40 T666,40 T684,40 T702,40 T720,40 T738,40 T756,40 T774,40 T792,40 T810,40 T828,40 T846,40 T864,40 T882,40 T900,40 T918,40 T936,40 T954,40 T972,40 T990,40 T1008,40 T1026,40 T1044,40 T1062,40 T1080,40 T1098,40 T1116,40 T1134,40 T1152,40 T1170,40 T1188,40 T1206,40 T1224,40 T1242,40 T1260,40 T1278,40 T1296,40 T1314,40 T1332,40 T1350,40 T1368,40 T1386,40 T1404,40 T1422,40 T1440,40 L1440,60 L0,60 Z" 
+                fill="#FBECD4"/>
+        </svg> -->
+
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 L12,60 Q27,120 42,60 L54,60 Q69,120 84,60 L96,60 Q111,120 126,60 L138,60 Q153,120 168,60 L180,60 Q195,120 210,60 L222,60 Q237,120 252,60 L264,60 Q279,120 294,60 L306,60 Q321,120 336,60 L348,60 Q363,120 378,60 L390,60 Q405,120 420,60 L432,60 Q447,120 462,60 L474,60 Q489,120 504,60 L516,60 Q531,120 546,60 L558,60 Q573,120 588,60 L600,60 Q615,120 630,60 L642,60 Q657,120 672,60 L684,60 Q699,120 714,60 L726,60 Q741,120 756,60 L768,60 Q783,120 798,60 L810,60 Q825,120 840,60 L852,60 Q867,120 882,60 L894,60 Q909,120 924,60 L936,60 Q951,120 966,60 L978,60 Q993,120 1008,60 L1020,60 Q1035,120 1050,60 L1062,60 Q1077,120 1092,60 L1104,60 Q1119,120 1134,60 L1146,60 Q1161,120 1176,60 L1188,60 Q1203,120 1218,60 L1230,60 Q1245,120 1260,60 L1272,60 Q1287,120 1302,60 L1314,60 Q1329,120 1344,60 L1356,60 Q1371,120 1386,60 L1398,60 Q1413,120 1428,60 L1440,60 L1440,120 L0,120 Z" 
+                fill="#FBECD4"/>
+        </svg>
     </div>
 
-    <!-- Main Container -->
-    <section class="container py-5">
-        <div class="row text-center pt-3">
-            <div class="col-lg-8 m-auto">
-                <h1 class="display-4" style="font-family: 'LilitaOne', sans-serif; color: #ffffff;">Wacamole Catering:</h1>
-                <h1 class="display-6" style="font-family: 'LilitaOne', sans-serif; color: #ffffff;">Authentic Mexican Flavor for Your Events</h1>
-                <p class="mt-3 mb-4" style="color: #f6f6f6;">
-                    Looking for catering that combines <strong>autentic Mexican flavors, premium quality, and full customization?</strong><br>
-                    At <strong>Wacamole</strong>, we bring our passion for Mexican cuisine to every event, offering a unique culinary experience with fresh ingredients and irresistible presentations.
+
+    <!-- Sección Appetizers -->
+    <section class="menu-section">
+        <div class="menu-content-box">
+            <div class="row g-0 align-items-stretch">
+                <div class="col-md-4">
+                    <div class="menu-image-container">
+                        <img src="assets/img/menu/nachos-img-menu.jpg" alt="Appetizers" class="img-fluid">
+                    </div>
+                </div>
+                
+                <div class="col-md-8">
+                    <div class="menu-text-content">
+                        <h2 class="menu-section-title color-black">APPETIZERS</h2>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="menu-item">
+                                    <span class="bullet">•</span> Salsa + chips
+                                </div>
+                                <div class="menu-item">
+                                    <span class="bullet">•</span> Queso + chips
+                                </div>
+                                <div class="menu-item">
+                                    <span class="bullet">•</span> Guacamole+ chips
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="menu-item">
+                                    <span class="bullet">•</span> Flautas: Birria - pollo x3
+                                </div>
+                                <div class="menu-item">
+                                    <span class="bullet">•</span> Empanadas: Birria - pollo x2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="wave-separator-bottom">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 L12,60 Q27,120 42,60 L54,60 Q69,120 84,60 L96,60 Q111,120 126,60 L138,60 Q153,120 168,60 L180,60 Q195,120 210,60 L222,60 Q237,120 252,60 L264,60 Q279,120 294,60 L306,60 Q321,120 336,60 L348,60 Q363,120 378,60 L390,60 Q405,120 420,60 L432,60 Q447,120 462,60 L474,60 Q489,120 504,60 L516,60 Q531,120 546,60 L558,60 Q573,120 588,60 L600,60 Q615,120 630,60 L642,60 Q657,120 672,60 L684,60 Q699,120 714,60 L726,60 Q741,120 756,60 L768,60 Q783,120 798,60 L810,60 Q825,120 840,60 L852,60 Q867,120 882,60 L894,60 Q909,120 924,60 L936,60 Q951,120 966,60 L978,60 Q993,120 1008,60 L1020,60 Q1035,120 1050,60 L1062,60 Q1077,120 1092,60 L1104,60 Q1119,120 1134,60 L1146,60 Q1161,120 1176,60 L1188,60 Q1203,120 1218,60 L1230,60 Q1245,120 1260,60 L1272,60 Q1287,120 1302,60 L1314,60 Q1329,120 1344,60 L1356,60 Q1371,120 1386,60 L1398,60 Q1413,120 1428,60 L1440,60 L1440,120 L0,120 Z" 
+                fill="#65176F"/>
+        </svg>
+    </div>
+
+
+    <!-- Sección Birria -->
+    <section class="special-menu-section">
+        <div class="row g-0 align-items-stretch" style="width: 65%; margin-bottom: 20px;">
+            <div class="col-md-8">
+                <div class="special-text-content">
+                    <div class="title-paragraph-wrapper d-flex align-items-center justify-content-center mb-4 flex-wrap">
+                        <div class="titles-block text-center me-4">
+                            <h2 class="menu-section-title color-beige">BIRRIA</h2>
+                            <h2 class="menu-section-subtitle color-beige">specials</h2>
+                        </div>
+
+                        <p class="description-text color-beige mb-0">
+                            Slow-cooked beef in our signature consummé — juicy, flavorful, unforgettable
+                        </p>
+                    </div>
+
+                    <div class="row justify-content-center text-center mt-3">
+                        <div class="col-md-6 d-flex flex-column align-items-center">
+                            <div class="special-menu-item"><span class="bullet">•</span> Quesabirrias x3</div>
+                            <div class="special-menu-item"><span class="bullet">•</span> Quesadilla</div>
+                            <div class="special-menu-item"><span class="bullet">•</span> Burrito</div>
+                        </div>
+
+                        <div class="col-md-6 d-flex flex-column align-items-center">
+                            <div class="special-menu-item"><span class="bullet">•</span> Torta</div>
+                            <div class="special-menu-item"><span class="bullet">•</span> Crazy fries</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="birria-wrapper">
+                    <div class="birria-image-container">
+                        <img src="assets/img/menu/quesabirria-img-menu.jpg" alt="Appetizers" class="main-img">
+                    </div>
+                    <!-- Sticker -->
+                    <img src="assets/img/menu/best-seller-logo.png" alt="Best Seller" class="sticker-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="wave-separator-top">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 L12,60 Q27,120 42,60 L54,60 Q69,120 84,60 L96,60 Q111,120 126,60 L138,60 Q153,120 168,60 L180,60 Q195,120 210,60 L222,60 Q237,120 252,60 L264,60 Q279,120 294,60 L306,60 Q321,120 336,60 L348,60 Q363,120 378,60 L390,60 Q405,120 420,60 L432,60 Q447,120 462,60 L474,60 Q489,120 504,60 L516,60 Q531,120 546,60 L558,60 Q573,120 588,60 L600,60 Q615,120 630,60 L642,60 Q657,120 672,60 L684,60 Q699,120 714,60 L726,60 Q741,120 756,60 L768,60 Q783,120 798,60 L810,60 Q825,120 840,60 L852,60 Q867,120 882,60 L894,60 Q909,120 924,60 L936,60 Q951,120 966,60 L978,60 Q993,120 1008,60 L1020,60 Q1035,120 1050,60 L1062,60 Q1077,120 1092,60 L1104,60 Q1119,120 1134,60 L1146,60 Q1161,120 1176,60 L1188,60 Q1203,120 1218,60 L1230,60 Q1245,120 1260,60 L1272,60 Q1287,120 1302,60 L1314,60 Q1329,120 1344,60 L1356,60 Q1371,120 1386,60 L1398,60 Q1413,120 1428,60 L1440,60 L1440,120 L0,120 Z" 
+                fill="#FBECD4"/>
+        </svg>
+
+        <!-- <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 L0,30 L18,30 Q27,0 36,30 L54,30 Q63,0 72,30 L90,30 Q99,0 108,30 L126,30 Q135,0 144,30 L162,30 Q171,0 180,30 L198,30 Q207,0 216,30 L234,30 Q243,0 252,30 L270,30 Q279,0 288,30 L306,30 Q315,0 324,30 L342,30 Q351,0 360,30 L378,30 Q387,0 396,30 L414,30 Q423,0 432,30 L450,30 Q459,0 468,30 L486,30 Q495,0 504,30 L522,30 Q531,0 540,30 L558,30 Q567,0 576,30 L594,30 Q603,0 612,30 L630,30 Q639,0 648,30 L666,30 Q675,0 684,30 L702,30 Q711,0 720,30 L738,30 Q747,0 756,30 L774,30 Q783,0 792,30 L810,30 Q819,0 828,30 L846,30 Q855,0 864,30 L882,30 Q891,0 900,30 L918,30 Q927,0 936,30 L954,30 Q963,0 972,30 L990,30 Q999,0 1008,30 L1026,30 Q1035,0 1044,30 L1062,30 Q1071,0 1080,30 L1098,30 Q1107,0 1116,30 L1134,30 Q1143,0 1152,30 L1170,30 Q1179,0 1188,30 L1206,30 Q1215,0 1224,30 L1242,30 Q1251,0 1260,30 L1278,30 Q1287,0 1296,30 L1314,30 Q1323,0 1332,30 L1350,30 Q1359,0 1368,30 L1386,30 Q1395,0 1404,30 L1422,30 Q1431,0 1440,30 L1440,60 L0,60 Z" 
+                fill="#FBECD4"/>
+        </svg> -->
+    </div>
+
+
+    <!-- Sección Menu -->
+    <section class="menu-section">
+        <div class="menu-card menu-border-left">
+            <div class="menu-card-image">
+                <img src="assets/img/menu/menu-tacos.jpg" alt="Tacos" class="menu-main-img border-right">
+                <!-- Sticker -->
+                <img src="assets/img/menu/taco-vibes-logo.png" alt="Taco Vibes" class="menu-sticker">
+            </div>
+
+            <div class="menu-card-center padding-bottom-0">
+                <h2 class="menu-title">TACOS X2</h2>
+                <p class="menu-description-center">
+                    Your choice of protein + 6” organic blue corn tortilla + cilantro + red onion + wacamole sauce.
+                </p>
+
+                <button class="menu-btn menu-btn-right">Add a costra</button>
+            </div>
+        </div>
+
+        <div class="menu-card menu-border-right">
+            <div class="menu-card-content padding-top-less padding-bottom-0">
+                <h2 class="menu-title margin-bottom-0">BURRITOS</h2>
+
+                <h3 class="menu-subtitle">California*</h3>
+                <p class="menu-description">
+                    Your choice of protein + fries + pico + queso + sour cream + guacamole + chipotle aioli
+                </p>
+                <h3 class="menu-subtitle">Mexicano*</h3>
+                <p class="menu-description">
+                    Your choice of protein + mexican rice black beans + pico + roasted corn + lettuce + wacamole sauce
+                </p>
+
+                <button class="menu-btn menu-btn-left">Turn your burrito into a bowl if you prefer</button>
+            </div>
+
+            <div class="menu-card-image">
+                <img src="assets/img/menu/menu-burritos.jpg" alt="Burritos" class="menu-main-img border-left">
+            </div>
+        </div>
+
+        <div class="menu-card menu-border-left">
+            <div class="menu-card-image">
+                <img src="assets/img/menu/menu-quesadillas.jpg" alt="Tacos" class="menu-main-img border-right">
+            </div>
+
+            <div class="menu-card-center">
+                <h2 class="menu-title">QUESADILLAS</h2>
+                <p class="menu-description">
+                    12" flour tortilla + your choice of proteins + oaxaca cheese.
+                </p>
+            </div>
+        </div>
+
+        <div class="menu-card menu-border-right margin-top-add-2">
+            <div class="menu-card-content padding-top-less padding-bottom-0">
+                <h2 class="menu-title margin-bottom-0">TORTAS</h2>
+                <p class="menu-description">
+                    Artisanal bun + your choice of protein + lettuce + tomato + guacamole + oaxaca cheese + sour cream + wacamole aioli.
+                </p>
+                <!-- Sticker -->
+                <img src="assets/img/menu/rolled-melted-logo.png" alt="Rolled and melted" class="menu-sticker">
+            </div>
+
+            <div class="menu-card-image">
+                <img src="assets/img/menu/menu-tortas.jpg" alt="Tortas" class="menu-main-img border-left">
+            </div>
+        </div>
+
+        <div class="menu-card menu-border-left margin-bottom-added">
+            <div class="menu-card-image">
+                <img src="assets/img/menu/menu-crazy-fries.jpg" alt="Tacos" class="menu-main-img border-right">
+            </div>
+
+            <div class="menu-card-center">
+                <h2 class="menu-title">CRAZY FRIES</h2>
+                <p class="menu-description">
+                    French fries + your choice of protein + bacon + cheese dip + pico + sour cream + pico + chipotle aioli + wacamole sauce.
                 </p>
             </div>
         </div>
     </section>
-    <!-- / Main Container -->
 
-    <div class="separator-img">
-        <img src="assets/img/separator-menu_01.jpg" alt="Separador" class="img-fluid w-100">
+
+    <div class="wave-separator-bottom">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 L12,60 Q27,120 42,60 L54,60 Q69,120 84,60 L96,60 Q111,120 126,60 L138,60 Q153,120 168,60 L180,60 Q195,120 210,60 L222,60 Q237,120 252,60 L264,60 Q279,120 294,60 L306,60 Q321,120 336,60 L348,60 Q363,120 378,60 L390,60 Q405,120 420,60 L432,60 Q447,120 462,60 L474,60 Q489,120 504,60 L516,60 Q531,120 546,60 L558,60 Q573,120 588,60 L600,60 Q615,120 630,60 L642,60 Q657,120 672,60 L684,60 Q699,120 714,60 L726,60 Q741,120 756,60 L768,60 Q783,120 798,60 L810,60 Q825,120 840,60 L852,60 Q867,120 882,60 L894,60 Q909,120 924,60 L936,60 Q951,120 966,60 L978,60 Q993,120 1008,60 L1020,60 Q1035,120 1050,60 L1062,60 Q1077,120 1092,60 L1104,60 Q1119,120 1134,60 L1146,60 Q1161,120 1176,60 L1188,60 Q1203,120 1218,60 L1230,60 Q1245,120 1260,60 L1272,60 Q1287,120 1302,60 L1314,60 Q1329,120 1344,60 L1356,60 Q1371,120 1386,60 L1398,60 Q1413,120 1428,60 L1440,60 L1440,120 L0,120 Z" 
+                fill="#65176F"/>
+        </svg>
     </div>
 
-    <!-- Menu Container -->
-    <section class="menu-background" style="padding-top: 3rem !important;">
-        <div class="container px-5">
-            <div class="mb-5 padding-menu-container" style="padding-bottom: 0px !important;">
-                <div class="mb-4">
-                    <img class="menu-title-main" src="assets/img/taco-vibes-title.png" alt="Taco title">
-                </div>
 
-                <div class="row mb-4 align-items-center">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        <img src="assets/img/menu/tacos-img-menu.jpg" class="product-img" alt="Street Tacos">
-                    </div>
-                    <div class="col-md-6">
-                        <h1 class="mb-1" style="font-family: 'LilitaOne', sans-serif; color: #FFD200;">STREET TACOS x 3</h1>
-                        <p class="mb-2" style="text-align: justify;">6" blue Corn tortillas with your choice of meat, raw onions, cilantro, lime and <strong style="font-family: 'LilitaOne', sans-serif;">WACAMOLE</strong> sauce.</p>
-                        <div class="d-flex align-items-end justify-content-between">
-                            <div class="price-separator"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="separator-line"></div>
-
-                <div class="row mb-4 align-items-center">
-                    <div class="col-md-6 order-md-2 mb-3 mb-md-0">
-                        <img src="assets/img/menu/quesabirria-img-menu.jpg" class="product-img" alt="Quesabirria">
-                    </div>
-                    <div class="col-md-6 order-md-1">
-                        <h1 class="mb-1" style="font-family: 'LilitaOne', sans-serif; color: #FFD200;">
-                            <span style="vertical-align: text-top;">
-                                <img src="assets/img/star-logo.png" alt="Star Logo" style="width: 30px; margin-top: -20px;">
-                            </span>
-                            QUESABIRRIA <br> &nbsp;&nbsp;&nbsp;&nbsp; ORDER (3 tacos)
-                        </h1>
-
-                        <p class="mb-2">Red corn tortillas filled with chihuahua melted cheese, slow-cooked beef birria, consomé, onions, cilantro and lime.</p>
-                        <div class="d-flex align-items-end justify-content-between">
-                            <div class="price-separator"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <br><br>
-
-                <div class="row mb-4 align-items-center">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        <img src="assets/img/menu/quesatacos-img-menu.jpg" class="product-img" alt="Street Tacos">
-                    </div>
-                    <div class="col-md-6">
-                        <h1 class="mb-1" style="font-family: 'LilitaOne', sans-serif; color: #FFD200;">
-                            <span style="vertical-align: text-top;">
-                                <img src="assets/img/star-logo.png" alt="Star Logo" style="width: 30px; margin-top: -20px;">
-                            </span>
-                            QUESA TACOS x 3
-                        </h1>
-                        <p class="mb-2" style="text-align: justify;">Your choice of tortilla, chihuahua cheese filled with your choice of meat, grilled onions, cilantro and <strong style="font-family: 'LilitaOne', sans-serif;">WACAMOLE</strong> sauce.</p>
-                        <div class="d-flex align-items-end justify-content-between">
-                            <div class="price-separator"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="separator-line"></div>
-            </div>
-
-            <div class="mb-5 padding-menu-container-md">
-                <div class="mb-4">
-                    <img src="assets/img/rolled-melted-title.png" alt="Taco title" style="width: 360px; height: auto; display: block;">
-                </div>
-
-                <div class="row mb-4 align-items-center">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        <img src="assets/img/menu/quesadillas-img-menu.jpg" class="product-img" alt="Quesadillas">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-4">
-                            <img class="title-item-menu" src="assets/img/quesadillas-title.png" alt="Quesadillas title" >
-                        </div>
-                        <p class="mb-2" style="text-align: justify;">12" Homemade fluor tortilla filled with your choice of meat, melted chihuahua and Oaxaca cheese, served with sour cream and <strong style="font-family: 'LilitaOne', sans-serif;">WACAMOLE</strong> sauce.</p>
-                        <div class="d-flex align-items-end justify-content-between">
-                            <div class="price-separator"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="separator-line"></div>
-
-                <div class="row mb-4 align-items-center">
-                    <div class="col-md-6 order-md-2 mb-3 mb-md-0">
-                        <img src="assets/img/menu/nachos-img-menu.jpg" class="product-img" alt="Nachos">
-                    </div>
-                    <div class="col-md-6 order-md-1">
-                        <div class="mb-4">
-                            <img class="title-item-menu" src="assets/img/nachos-title.png" alt="Nachos title">
-                        </div>
-                        <p class="mb-2" style="text-align: justify;">Crispy tortilla chips topped with your choice of meat, beans, melted cheese dip, lettuce, pico de gallo, jalapeños, sour cream and <strong style="font-family: 'LilitaOne', sans-serif;">WACAMOLE</strong> sauce.</p>
-                        <div class="d-flex align-items-end justify-content-between">
-                            <div class="price-separator"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="separator-line"></div>
-
-                <div class="row mb-4 align-items-center">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        <img src="assets/img/menu/burritos-img-menu.jpg" class="product-img" alt="Quesadillas">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-4">
-                            <img class="title-item-menu" src="assets/img/burritos-title.png" alt="Burritos title">
-                        </div>
-                        <p class="mb-2" style="text-align: justify;">12" Homemade fluor tortilla stuffed with your choice of meat, Mexican rice, black beans, cheese, lettuce, roasted corn, pico de gallo, sour cream and <strong style="font-family: 'LilitaOne', sans-serif;">WACAMOLE</strong> sauce.</p>
-                        <img src="assets/img/turn-bowl-img.png" alt="turn bowl" style="max-width: 100%; height: auto; margin-bottom: 16px;">
-                        <div class="d-flex align-items-end justify-content-between">
-                            <div class="price-separator"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="separator-line"></div>
-            </div>
-
-            <div class="mb-5 padding-menu-container-md">
-                <div class="mb-4">
-                    <img src="assets/img/street-bites-title.png" alt="Taco title" style="width: 360px; height: auto; display: block;">
-                </div>
-
-                <div class="row mb-4 align-items-center">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        <img src="assets/img/menu/torta-img-menu.jpg" class="product-img" alt="Quesadillas">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-4">
-                            <img class="title-item-menu" src="assets/img/torta-mexicana-title.png" alt="Torta title">
-                        </div>
-                        <p class="mb-2" style="text-align: justify;">Artisan telera bun, your choice of shredded meat, chihuahua cheese, lettuce, pico, tortilla flakes & and <strong style="font-family: 'LilitaOne', sans-serif;">WACAMOLE</strong> sauce.</p>
-                        <div class="d-flex align-items-end justify-content-between">
-                            <div class="price-separator"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="separator-line"></div>
-
-                <div class="row mb-4 align-items-center">
-                    <div class="col-md-6 order-md-2 mb-3 mb-md-0">
-                        <img src="assets/img/menu/docho-img-menu.jpg" class="product-img" alt="Nachos">
-                    </div>
-                    <div class="col-md-6 order-md-1">
-                        <div class="mb-4">
-                            <img class="title-item-menu" src="assets/img/docho-title.png" alt="Docho title">
-                        </div>
-                        <p class="mb-2" style="text-align: justify;">Beef hot dog link inside of potato artisan bun, applewood bacon, grilled fajita veggies, tortilla flakes, jalapeño, cilantro, mayo and chipotle mayo.</p>
-                        <div class="d-flex align-items-end justify-content-between">
-                            <div class="price-separator"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="separator-line"></div>
-
-                <div class="row mb-4 align-items-center">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        <img src="assets/img/menu/fries-img-menu.jpg" class="product-img" alt="Quesadillas">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-4">
-                            <img class="title-item-menu" src="assets/img/crazy-fries-title.png" alt="Fries title">
-                        </div>
-                        <p class="mb-2" style="text-align: justify;">Crispy french topped with your choice of meat, applewood bacon, melted cheese dip, pico de gallo, jalapeños, sour cream, <strong style="font-family: 'LilitaOne', sans-serif;">WACAMOLE</strong> sauce, jalapeño, cilantro, mayo & chipotle mayo.</p>
-                        <div class="d-flex align-items-end justify-content-between">
-                            <div class="price-separator"></div>
-                        </div>
+    <!-- Sección Proteins -->
+    <section class="special-menu-section">
+        <div class="row align-items-center" style="width: 75%; margin-bottom: 20px;">
+            <div class="col-md-3">
+                <div class="titles-block text-center me-4">
+                    <h2 class="menu-section-title color-beige">PROTEINS</h2>
+                    <h2 class="menu-section-subtitle color-beige">choose your</h2>
+                    <div class="custom-text-container">
+                        <h1 class="custom-text-content">FAVORITE</h1>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="separator-img">
-            <img src="assets/img/separator-menu_02.jpg" alt="Separador" class="img-fluid w-100">
-        </div>
-    </section>
-    <!-- / Menu Container -->
-
-    <!-- Protein Section -->
-    <section class="protein-background py-5">
-        <div class="row pt-3">
-            <div class="col-lg-8 m-auto">
-                <div class="mb-4">
-                    <img class="title-img" src="assets/img/proteins-title.png" alt="proteins" style="width: 300px; height: auto; display: block;">
+            <div class="col-md-3">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="special-menu-item"><span class="bullet">•</span> Asada</div>
+                    <div class="special-menu-item"><span class="bullet">•</span> Grilled chicken</div>
+                    <div class="special-menu-item"><span class="bullet">•</span> Pastor</div>
+                    <div class="special-menu-item"><span class="bullet">•</span> Carnitas</div>
+                    <div class="special-menu-item"><span class="bullet">•</span> Chicken tinga</div>
+                    <div class="special-menu-item"><span class="bullet">•</span> Ground beef</div>
                 </div>
             </div>
-        </div>
 
-        <div class="container prtns-main-cnt">
-            <div class="row">
-                <div class="col-md-6">
-                    <ul style="list-style: none; padding-left: 0;">
-                        <li style="color: #65176F;"><span style="color: #F21C43;">●</span> Seasoned ground beef</li>
-                        <li style="color: #65176F;"><span style="color: #F21C43;">●</span> Shredded chicken.</li>
-                        <li style="color: #65176F;"><span style="color: #F21C43;">●</span> Charbroiled Marinated Chicken</li>
-                        <li style="color: #65176F;"><span style="color: #F21C43;">●</span> Charbroiled Pork Pastor</li>
-                        <li style="color: #65176F;"><span style="color: #F21C43;">●</span> Carnitas (Shredded pork)</li>
-                    </ul>
+            <div class="col-md-3">
+                <div class="titles-block text-center me-4">
+                    <h2 class="menu-section-subtitle color-beige">special</h2>
+                    <h2 class="menu-section-title color-beige">PROTEINS</h2>
                 </div>
-                <div class="col-md-6">
-                    <ul style="list-style: none; padding-left: 0;">
-                        <li style="color: #65176F;"><span style="color: #F21C43;">●</span> Charbroiled Sirloin Steak</li>
-                        <li style="color: #65176F;"><span style="color: #F21C43;">●</span> Steak & Chicken Fajitas</li>
-                        <li style="color: #65176F;"><span style="color: #F21C43;">●</span> Beef Birria</li>
-                        <li style="color: #65176F;"><span style="color: #F21C43;">●</span> Veggie (grilled fajita Pepper’s)</li>
-                    </ul>
+            </div>
+
+            <div class="col-md-3">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="special-menu-item"><span class="bullet">•</span> Thin ribeye</div>
+                    <div class="special-menu-item"><span class="bullet">•</span> Alambre</div>
+                    <div class="special-menu-item"><span class="bullet">•</span> Campechana</div>
+                    <div class="special-menu-item"><span class="bullet">•</span> Combinado</div>
+                    <div class="special-menu-item"><span class="bullet">•</span> Hawaiana</div>
+                    <div class="special-menu-item menu-item-background"><span class="bullet">•</span> Veggie option</div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- / Protein Section -->
-    
-    
-    <!-- Extra Menu Section -->
-    <section class="extra-menu-background py-5">
-        <div class="container" style="margin-top: 20px;">
-            <div class="row">
-                <div class="col-lg-6 mb-5 text-center">
-                    <img src="assets/img/drinks-title.png" alt="Drinks Title" style="width: 250px; height: auto; display: block; margin: 0 auto 2rem auto;">
-                    
-                    <ul style="list-style: none; padding-left: 0; margin: 0;">
-                        <li style="display: flex; align-items: center; justify-content: center; color: #4F4F4F;">
-                            <span style="white-space: nowrap;">Aguas frescas</span>
-                        </li>
-                        <li style="display: flex; align-items: center; justify-content: center; color: #4F4F4F;">
-                            <span style="white-space: nowrap;">Local sodas</span>
-                        </li>
-                        <li style="display: flex; align-items: center; justify-content: center; color: #4F4F4F;">
-                            <span style="white-space: nowrap;">Import sodas</span>
-                        </li>
-                        <li style="display: flex; align-items: center; justify-content: center; color: #4F4F4F;">
-                            <span style="white-space: nowrap;">Bottle water</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-6 mb-5">
-                    <img src="assets/img/deserts-title.png" alt="Desserts Title" style="width: 250px; height: auto; display: block; margin: 0 auto 2rem auto;">
-
-                    <ul style="list-style: none; padding-left: 0; margin: 0;">
-                        <li style="display: flex; align-items: center; justify-content: center; color: #ffffff;">
-                            <span style="white-space: nowrap;">Churro bites</span>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- / Extra Menu Section -->
 
 
-    <div class="separator-img">
-        <img src="assets/img/separator-menu_01.jpg" alt="Separador" class="separator-drinks img-fluid w-100">
+    <div class="wave-separator-top">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 L12,60 Q27,120 42,60 L54,60 Q69,120 84,60 L96,60 Q111,120 126,60 L138,60 Q153,120 168,60 L180,60 Q195,120 210,60 L222,60 Q237,120 252,60 L264,60 Q279,120 294,60 L306,60 Q321,120 336,60 L348,60 Q363,120 378,60 L390,60 Q405,120 420,60 L432,60 Q447,120 462,60 L474,60 Q489,120 504,60 L516,60 Q531,120 546,60 L558,60 Q573,120 588,60 L600,60 Q615,120 630,60 L642,60 Q657,120 672,60 L684,60 Q699,120 714,60 L726,60 Q741,120 756,60 L768,60 Q783,120 798,60 L810,60 Q825,120 840,60 L852,60 Q867,120 882,60 L894,60 Q909,120 924,60 L936,60 Q951,120 966,60 L978,60 Q993,120 1008,60 L1020,60 Q1035,120 1050,60 L1062,60 Q1077,120 1092,60 L1104,60 Q1119,120 1134,60 L1146,60 Q1161,120 1176,60 L1188,60 Q1203,120 1218,60 L1230,60 Q1245,120 1260,60 L1272,60 Q1287,120 1302,60 L1314,60 Q1329,120 1344,60 L1356,60 Q1371,120 1386,60 L1398,60 Q1413,120 1428,60 L1440,60 L1440,120 L0,120 Z" 
+                fill="#FBECD4"/>
+        </svg>
     </div>
 
-    <!-- Drinks Section (mobile) -->
-    <section class="drinks-menu-container py-5">
-        <div class="row pt-3">
-            <div class="col-lg-8 m-auto">
-                <div class="mb-4">
-                    <img class="title-img" src="assets/img/drinks-title.png" alt="proteins" style="width: 250px; height: auto; display: block;">
+
+    <section class="menu-section">
+        <div class="row align-items-center" style="width: 60%; margin-bottom: 20px;">
+            <div class="col-md-2">
+                <div class="titles-block text-center me-4">
+                    <h2 class="menu-section-title color-black">DRINKS</h2>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="special-menu-item text-align-center">Drint of the month</div>
+                    <div class="special-menu-item text-align-center">Jamaica</div>
+                    <div class="special-menu-item text-align-center">Horchata</div>
+                    <div class="special-menu-item text-align-center">Local soda</div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="d-flex flex-column align-items-left">
+                    <div class="special-menu-item text-align-center">Water</div>
+                    <div class="special-menu-item text-align-center">Jarritos</div>
+                    <div class="special-menu-item text-align-center">Mexican coke</div>
+                    <div class="special-menu-item text-align-center">Topochico</div>
                 </div>
             </div>
         </div>
 
-        <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;">
-            <div class="container drinks-main-container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <ul style="list-style: none; padding-left: 0; margin: 0;">
-                            <li style="display: flex; align-items: center; color: #4F4F4F;">
-                                <span style="flex: 0 0 auto; white-space: nowrap;">Aguas frescas</span>
-                            </li>
-                            <li style="display: flex; align-items: center; color: #4F4F4F;">
-                                <span style="flex: 0 0 auto; white-space: nowrap;">Local sodas</span>
-                            </li>
-                            <li style="display: flex; align-items: center; color: #4F4F4F;">
-                                <span style="flex: 0 0 auto; white-space: nowrap;">Import sodas</span>
-                            </li>
-                            <li style="display: flex; align-items: center; color: #4F4F4F;">
-                                <span style="flex: 0 0 auto; white-space: nowrap;">Bottle water</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="menu-card menu-border-right margin-top-add-2 menu-card-fit">
+            <div class="menu-card-content padding-top-less padding-bottom-0">
+                <h2 class="menu-title menu-vertical-center">CHURROS</h2>
+                <!-- Sticker -->
+                <img src="assets/img/menu/deserts-logo.png" alt="Rolled and melted" class="menu-sticker">
             </div>
-        </div>
-    </section>
-    <!-- / Drinks Section (mobile) -->
 
-
-    <!-- Desserts Section (mobile) -->
-    <section class="desserts-menu-container py-5">
-        <div class="row pt-3">
-            <div class="col-lg-8 m-auto">
-                <div class="mb-4">
-                    <img class="title-img" src="assets/img/deserts-title.png" alt="proteins" style="width: 250px; height: auto; display: block;">
-                </div>
+            <div class="menu-card-image">
+                <img src="assets/img/menu/menu-churros.jpg" alt="Tortas" class="menu-main-img border-left">
             </div>
         </div>
 
-        <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;">
-            <div class="container drinks-main-container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul style="list-style: none; padding-left: 0; margin: 0;">
-                            <li style="display: flex; align-items: center; color: #ffffff;">
-                                <span style="flex: 0 0 auto; white-space: nowrap;">Churro bites</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="row align-items-center justify-content-center" style="width: 60%; margin-bottom: 20px; margin-top: 40px;">
+            <a href="https://linktr.ee/wacamole_nashville?fbclid=PAZXh0bgNhZW0CMTEAAacxvxTtnyzGuOSzLywkHcLfSrfWh6RGsu-m18Wyu7A9xIWMMNM-iKwOiWW5nw_aem_4qF_QTba_aNsNGQoUMNtgg" 
+                class="btn btn-warning btn-lg hero-btn" style="width: 60%;">TAKE YOUR ORDER HERE</a>
         </div>
     </section>
-    <!-- / Desserts Section (mobile) -->
 
 
-    <div class="separator-img">
-        <img src="assets/img/separator.jpg" alt="Separador" class="img-fluid w-100">
-    </div>
+
 
     <!-- Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
-        <div class="footer-overlay">
+        <div class="footer-purple-section">
             <div class="container-md">
-                <div class="row align-items-center">
-                    <div class="col-6 col-md-6 mb-4 mb-md-0">
-                        <div class="footer-box rounded">
-                            <div class="row">
-                                <div class="col menu-options">
-                                    <h2 class="footer-title">About</h2>
-                                    <ul class="list-unstyled text-light footer-link-list">
-                                        <li><a class="text-decoration-none footer-item" href="menu.html">Menu</a></li>
-                                        <li><a class="text-decoration-none footer-item" href="https://linktr.ee/wacamole_nashville?fbclid=PAZXh0bgNhZW0CMTEAAacxvxTtnyzGuOSzLywkHcLfSrfWh6RGsu-m18Wyu7A9xIWMMNM-iKwOiWW5nw_aem_4qF_QTba_aNsNGQoUMNtgg" target="_blank">Locations</a></li>
-                                        <li><a class="text-decoration-none footer-item" href="catering.html">Cathering</a></li>
-                                        <li><a class="text-decoration-none footer-item" href="events.html">Book Us</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col">
-                                    <h2 class="footer-title">About</h2>
-                                    <ul class="list-unstyled text-light footer-link-list">
-                                        <li><a class="text-decoration-none footer-item" href="how-to-order.html">How to Order</a></li>
-                                        <li><a class="text-decoration-none footer-item" href="our-product.html">Our Product</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col">
-                                    <h2 class="footer-title">Other</h2>
-                                    <ul class="list-unstyled text-light footer-link-list">
-                                        <li><a class="text-decoration-none footer-item" href="contact.html">Contact Us</a></li>
-                                        <li><a class="text-decoration-none footer-item" href="#">Help</a></li>
-                                        <li class="social-networks-other">
-                                            <div class="mt-3">
-                                                <p class="footer-social-handle">@wacamole_nashville</p>
-                                                <div class="d-flex gap-3">
-                                                    <a href="https://www.facebook.com/profile.php?id=100093065242375" target="_blank" class="text-light fs-5">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                    </a>
-                                                    <a href="https://instagram.com/wacamole_nashville" target="_blank" class="text-light fs-5">
-                                                        <i class="fab fa-instagram"></i>
-                                                    </a>
-                                                    <a href="https://tiktok.com/@wacamole.nashvill" target="_blank" class="text-light fs-5">
-                                                        <i class="fab fa-tiktok"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
+                <div class="row align-items-start justify-content-between">
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <h2 class="footer-title">ABOUT</h2>
+                                <ul class="list-unstyled text-light footer-link-list">
+                                    <li><a class="text-decoration-none footer-item" href="menu.html">Menu</a></li>
+                                    <li><a class="text-decoration-none footer-item" href="https://linktr.ee/wacamole_nashville..." target="_blank">Locations</a></li>
+                                    <li><a class="text-decoration-none footer-item" href="catering.html">Catering</a></li>
+                                    <li><a class="text-decoration-none footer-item" href="events.html">Book Us</a></li>
+                                </ul>
                             </div>
+                            <div class="col-4 text-center">
+                                <h2 class="footer-title">ABOUT</h2>
+                                <ul class="list-unstyled text-light footer-link-list">
+                                    <li><a class="text-decoration-none footer-item" href="how-to-order.html">How to order</a></li>
+                                    <li><a class="text-decoration-none footer-item" href="our-product.html">Our Product</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4 text-center">
+                                <h2 class="footer-title">OTHER</h2>
+                                <ul class="list-unstyled text-light footer-link-list">
+                                    <li><a class="text-decoration-none footer-item" href="contact.html">Contact Us</a></li>
+                                    <li><a class="text-decoration-none footer-item" href="#">Help</a></li>
+                                    <li class="social-networks-other">
+                                        <div class="mt-3">
+                                            <p class="footer-social-handle">@wacamole_nashville</p>
+                                            <div class="d-flex gap-3 justify-content-center">
+                                                <a href="https://www.facebook.com/profile.php?id=100093065242375" target="_blank" class="text-light fs-5">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                                <a href="https://instagram.com/wacamole_nashville" target="_blank" class="text-light fs-5">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                                <a href="https://tiktok.com/@wacamole.nashvill" target="_blank" class="text-light fs-5">
+                                                    <i class="fab fa-tiktok"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-                            <div class="row text-left social-networks-mobile">
-                                <div class="mt-3">
-                                    <p class="footer-social-handle">@wacamole_nashville</p>
-                                    <div class="d-flex gap-3">
-                                        <a href="https://www.facebook.com/profile.php?id=100093065242375" target="_blank" class="text-light fs-5">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                        <a href="https://instagram.com/wacamole_nashville" target="_blank" class="text-light fs-5">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                        <a href="https://tiktok.com/@wacamole.nashvill" target="_blank" class="text-light fs-5">
-                                            <i class="fab fa-tiktok"></i>
-                                        </a>
-                                    </div>
+                        <div class="row text-left social-networks-mobile">
+                            <div class="mt-3">
+                                <p class="footer-social-handle">@wacamole_nashville</p>
+                                <div class="d-flex gap-3 justify-content-center">
+                                    <a href="https://www.facebook.com/profile.php?id=100093065242375" target="_blank" class="text-light fs-5">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://instagram.com/wacamole_nashville" target="_blank" class="text-light fs-5">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://tiktok.com/@wacamole.nashvill" target="_blank" class="text-light fs-5">
+                                        <i class="fab fa-tiktok"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-6 col-md-6 d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="d-flex flex-wrap justify-content-center gap-2 mb-2 footer-btns">
-                            <a href="https://maps.app.goo.gl/M6jnuR1wFbZ7Tpx68?g_st=com.google.maps.preview.copy" target="_blank" class="footer-btn d-flex align-items-center gap-2" style="text-decoration: none;">
-                                <img src="assets/img/footer-btn-home.png" alt="Home base icon" class="icon img-fluid" style="max-width: 14rem;" />
+                    <div class="col-12 col-md-5 d-flex flex-column align-items-end">
+                        <div class="d-flex flex-row gap-2 mb-3 footer-btns">
+                            <a href="https://maps.app.goo.gl/M6jnuR1wFbZ7Tpx68..." target="_blank" class="footer-btn">
+                                <img src="assets/img/footer-btn-home.png" alt="Home base icon" class="img-fluid" />
                             </a>
-                            <a href="https://streetfoodfinder.com/wacamolemexicanfood" target="_blank" class="footer-btn d-flex align-items-center gap-2" style="text-decoration: none;">
-                                <img src="assets/img/footer-btn-chasing.png" alt="Chasing Nashville's beat icon" class="icon img-fluid" style="max-width: 14rem;" />
+                            <a href="https://streetfoodfinder.com/wacamolemexicanfood" target="_blank" class="footer-btn">
+                                <img src="assets/img/footer-btn-chasing.png" alt="Chasing Nashville's beat icon" class="img-fluid" />
                             </a>
                         </div>
-                        <p class="footer-quote" style="font-family: 'LilitaOne', sans-serif;">Let’s taco ’bout it.</p>
+                        
+                        <p class="footer-quote">LET'S TACO 'BOUT IT.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-yellow-section">
+            <div class="container-md">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-auto">
+                        <img src="assets/img/LogoWacaMolePurple.png" alt="Waca Mole Logo" class="footer-logo" />
                     </div>
                 </div>
             </div>
