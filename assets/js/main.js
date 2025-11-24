@@ -25,7 +25,7 @@ function scrollCarousel(direction) {
   const track = document.getElementById('carouselTrack');
   const itemWidth = track.querySelector('.custom-carousel-item').offsetWidth + 20; // item width + margin
   track.scrollBy({
-    left: direction * itemWidth * 2, // Avanza o retrocede 2 ítems
+    left: direction * itemWidth * 2,
     behavior: 'smooth'
   });
 }

@@ -125,6 +125,28 @@
   }
 }
 
+/* Size Sections */
+.birria-row {
+    width: 65%;
+    margin-bottom: 20px;
+}
+
+.proteins-row {
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+.drinks-row {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.order-button-row {
+    width: 60%;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
 
 /* Menu Section */
 .menu-section {
@@ -229,11 +251,11 @@
 
 @media (max-width: 576px) {
     .menu-section-title {
-        font-size: 2rem !important;
+      font-size: 2rem !important;
     }
     
     .menu-item {
-        font-size: 1.3rem;
+      font-size: 1.3rem;
     }
 }
 
@@ -341,6 +363,18 @@
 }
 
 @media (max-width: 992px) {
+  .menu-card {
+    width: 80%;
+    height: auto;
+  }
+  
+  .birria-row,
+  .proteins-row,
+  .drinks-row,
+  .order-button-row {
+    width: 85%;
+  }
+
   .menu-section-title {
     font-size: 3rem !important;
   }
@@ -358,6 +392,7 @@
 @media (max-width: 768px) {
   .special-menu-section {
     padding: 2rem 0;
+    padding-bottom: 3rem !important;
   }
   
   .special-text-content {
@@ -612,19 +647,112 @@
 
 @media (max-width: 768px) {
   .menu-card {
+    width: 90%;
     flex-direction: column;
-    border-radius: 20px;
+    height: auto;
+    border-radius: 20px !important;
+  }
+
+  .menu-border-left,
+  .menu-border-right {
+    border-radius: 20px !important;
   }
 
   .menu-card-image,
-  .menu-card-content {
-    width: 100%;
+  .menu-card-content,
+  .menu-card-center {
+    width: 100% !important;
+  }
+
+  .menu-card-image {
+    max-height: 250px;
+  }
+
+  .menu-card-image .menu-main-img {
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .menu-card-content,
+  .menu-card-center {
+    padding: 1.5rem !important;
+  }
+  
+  .menu-card-image .border-right,
+  .menu-card-image .border-left {
+    border: none !important;
+  }
+  
+  .menu-btn-right, .menu-btn-left {
+    border-radius: 0 0 17px 17px !important;
+  }
+  
+  .birria-row,
+  .proteins-row,
+  .drinks-row {
+    width: 90%;
+    flex-direction: column;
+  }
+  
+  .order-button-row {
+    width: 90%;
+  }
+  
+  .order-button-row .hero-btn {
+    width: 100% !important;
+  }
+  
+  .title-paragraph-wrapper {
+    flex-direction: column !important;
+  }
+  
+  .proteins-row .col-md-3 {
+    margin-bottom: 2rem;
+  }
+  
+  .menu-title {
+    font-size: 3rem !important;
+  }
+  
+  .menu-subtitle {
+    font-size: 1.8rem !important;
   }
 
   .menu-sticker {
-    width: 120px;
+    width: 120px !important;
     top: -30px;
     left: -30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-card {
+    width: 95%;
+  }
+    
+  .birria-row,
+  .proteins-row,
+  .drinks-row,
+  .order-button-row {
+    width: 95%;
+  }
+    
+  .menu-title {
+    font-size: 2.5rem !important;
+  }
+    
+  .menu-description,
+  .menu-description-center {
+    font-size: 1.2rem !important;
+  }
+    
+  .menu-btn {
+    font-size: 1.3rem !important;
+    padding: 0.8rem 1.5rem;
+  }
+    
+  .custom-text-content {
+    font-size: 2rem !important;
   }
 }
 
