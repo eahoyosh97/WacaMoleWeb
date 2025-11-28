@@ -12,6 +12,7 @@
     background: rgba(0,0,0,0.35);
     z-index: 1;
 }
+
 .banner-catering .container {
     position: relative;
     z-index: 2;
@@ -39,8 +40,7 @@
 
 .catering-title {
     font-family: 'Anton', sans-serif;
-    font-size: 5rem;
-    font-weight: 400;
+    font-size: 6rem;
     line-height: 1;
     color: #000;
 }
@@ -62,7 +62,7 @@
 .catering-subtitle-info {
     margin: 0;
     text-align: left;
-    font-size: 2rem !important;
+    font-size: 2.2rem !important;
     color: #000;
     line-height: 1.2;
     font-family: 'Anton', sans-serif;
@@ -81,9 +81,8 @@
     text-align: center;
     max-width: 450px !important;
     margin: 0 auto;
-    font-size: 1.8rem !important;
-    font-family: 'Amatic SC', cursive;
-    -webkit-text-stroke: 1px currentColor;
+    font-size: 1.6rem !important;
+    font-family: 'Caveat', cursive;
 }
 
 .catering-right {
@@ -96,15 +95,14 @@
     text-align: center;
     border: 2px solid #000;
     border-radius: 25px;
-    padding: 2.5rem;
+    padding: 2rem;
     line-height: 1.4;
 }
 
 .catering-box p {
     font-weight: bold !important;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Caveat', cursive;
     font-size: 1.6rem !important;
-    -webkit-text-stroke: 1px currentColor;
 }
 
 .catering-box p:last-child {
@@ -218,10 +216,9 @@
     margin: 0;
     font-weight: bold !important;
     letter-spacing: 1.6px;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Caveat', cursive;
     line-height: 1;
     font-size: 1.6rem !important;
-    -webkit-text-stroke: 1px currentColor;
 }
 
 .events-grid {
@@ -237,8 +234,7 @@
     font-size: 1.4rem !important;
     font-weight: bold !important;
     border-radius: 10px;
-    font-family: 'Amatic SC', cursive;
-    -webkit-text-stroke: 0.5px currentColor;
+    font-family: 'Caveat', cursive;
 }
 
 @media (max-width: 767px) {

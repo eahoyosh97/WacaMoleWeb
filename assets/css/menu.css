@@ -1,33 +1,32 @@
 /* Banner principal */
 .banner-static {
-    overflow: hidden;
-    padding: 4rem 0;
-    min-height: 100vh;
-    height: auto;
-    display: flex;
-    align-items: center;
+  overflow: hidden;
+  padding: 4rem 0;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  align-items: center;
 }
 
 .banner-static .banner-bg {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
 }
 
 .banner-static .banner-bg-left {
-    left: 0;
-    background-image: url('../img/menu/menu-banner-bg1.jpg');
-    
+  left: 0;
+  background-image: url('../img/menu/menu-banner-bg1.jpg');  
 }
 
 .banner-static .banner-bg-right {
-    right: 0;
-    background-image: url('../img/menu/menu-banner-bg2.jpg');
+  right: 0;
+  background-image: url('../img/menu/menu-banner-bg2.jpg');
 }
 
 .banner-static .banner-bg::after {
@@ -40,71 +39,71 @@
 }
 
 .banner-static .container {
-    position: relative;
-    z-index: 2;
-    height: 100%;
+  position: relative;
+  z-index: 2;
+  height: 100%;
 }
 
 .banner-content {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .banner-content-box {
-    background-color: rgba(251, 236, 212, 0.95);
-    padding: 3rem 2.5rem;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    max-width: 600px;
-    margin: 0 auto;
+  background-color: rgba(251, 236, 212, 0.95);
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .location-text-container {
-    display: inline-block;
-    background-image: url('../../assets/img/btn-black-container.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 1rem 3rem;
+  display: inline-block;
+  background-image: url('../../assets/img/btn-black-container.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1rem 3rem;
 }
 
 .location-text {
-    font-family: 'Amatic SC', sans-serif !important;
-    font-size: 2.5rem !important;
-    font-weight: 700 !important;
-    color: var(--black);
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  font-family: 'Caveat', sans-serif !important;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  color: var(--black);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 768px) {
-    .banner-static {
-        min-height: 300px;
-        padding: 3rem 0;
-        height: auto;
-    }
-    
-    .banner-static .banner-bg {
-        opacity: 0.3;
-    }
-    
-    .banner-content-box {
-        padding: 2rem 1.5rem;
-        max-width: 90%;
-    }
-    
-    .location-text {
-        font-size: 2rem !important;
-    }
-    
-    .location-text-container {
-        padding: 0.8rem 2rem;
-    }
+  .banner-static {
+    min-height: 300px;
+    padding: 3rem 0;
+    height: auto;
+  }
+  
+  .banner-static .banner-bg {
+    opacity: 0.3;
+  }
+  
+  .banner-content-box {
+    padding: 2rem 1.5rem;
+    max-width: 90%;
+  }
+  
+  .location-text {
+    font-size: 2rem !important;
+  }
+  
+  .location-text-container {
+    padding: 0.8rem 2rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -161,7 +160,7 @@
 
 .menu-content-box {
   width: 60%;
-  height: auto;
+  height: 320px;
   margin-bottom: 60px;
   border: 3px solid var(--black);
   border-radius: 0 20px 20px 0;
@@ -188,7 +187,7 @@
 }
 
 .menu-text-content {
-  padding: 1rem 2.5rem;
+  padding: 2.5rem;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -205,8 +204,8 @@
 
 .menu-item {
   height: 40px;
-  font-size: 1.5rem !important;
-  font-family: 'Amatic SC', cursive;
+  font-size: 1.4rem !important;
+  font-family: 'Caveat', cursive;
   color: var(--black);
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
@@ -214,7 +213,6 @@
   border-radius: 15px;
   display: flex;
   align-items: center;
-  -webkit-text-stroke: 1px currentColor;
 }
 
 .menu-item .bullet {
@@ -225,12 +223,19 @@
 @media (max-width: 768px) {
   .menu-content-box {
     width: 80%;
+    height: auto;
     border-radius: 20px;
     margin-bottom: 20px;
   }
+
+  .menu-section .row,
+  .menu-section .col-md-4,
+  .menu-section .col-md-8 {
+    height: auto;
+  }
   
   .menu-image-container {
-    min-height: 250px;
+    min-height: 220px;
     border-radius: 20px 20px 0 0;
   }
 
@@ -265,7 +270,7 @@
   z-index: 1;
   position: relative;
   background-color: #65176F;
-  padding: 3rem 0;
+  padding: 5rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -281,11 +286,10 @@
 }
 
 .description-text {
-  font-family: 'Amatic SC', cursive;
-  font-size: 1.8rem !important;
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem !important;
   max-width: 374px;
   text-align: left;
-  -webkit-text-stroke: 1px currentColor;
 }
 
 .special-text-content {
@@ -296,9 +300,11 @@
 }
 
 .menu-section-subtitle {
-  letter-spacing: 0.5rem;
-  font-family: 'Amatic SC', cursive;
-  -webkit-text-stroke: 1px currentColor;
+  letter-spacing: 0.4rem;
+  font-size: 2.5rem !important;
+  font-family: 'Caveat', cursive;
+  font-weight: bold !important;
+  font-size: 2rem !important;
 }
 
 .menu-item-background {
@@ -315,7 +321,7 @@
   height: 50px;
   width: 300px;
   font-size: 1.5rem !important;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Caveat', cursive;
   color: var(--black);
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
@@ -324,7 +330,6 @@
   display: flex;
   align-items: center;
   background-color: #FBECD4;
-  -webkit-text-stroke: 1px currentColor;
 }
 
 .special-menu-item .bullet {
@@ -483,11 +488,20 @@
 
 /* Main Menu Section */
 .menu-section {
-    padding: 3rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu-section .row {
+  height: 100%;
+}
+
+.menu-section .col-md-4,
+.menu-section .col-md-8 {
+  height: 100%;
 }
 
 .menu-border-left {
@@ -561,8 +575,8 @@
 }
 
 .menu-card-content .menu-subtitle, .menu-description {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
 }
 
 .menu-title {
@@ -589,20 +603,20 @@
 }
 
 .menu-description {
-  font-size: 1.3rem !important;
-  font-family: 'Amatic SC', cursive;
+  font-size: 1.4rem !important;
+  font-family: 'Caveat', cursive;
   color: #000;
   margin-bottom: auto;
-  -webkit-text-stroke: 1px currentColor;
+  padding: 40px 80px;
+  text-align: left;
 }
 
 .menu-description-center {
-  font-size: 1.3rem !important;
-  font-family: 'Amatic SC', cursive;
+  font-size: 1.6rem !important;
+  font-family: 'Caveat', cursive;
   color: #000;
   margin-bottom: 1.5rem;
   text-align: center;
-  -webkit-text-stroke: 1px currentColor;
 }
 
 .menu-btn {
@@ -611,11 +625,21 @@
   background-color: #E34159;
   color: #fff;
   border: none;
-  padding: 1rem 2rem;
+  padding: 0.6rem 2rem;
   font-size: 1.5rem;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Caveat', cursive;
   cursor: none !important;
   align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; 
+}
+
+.btn-icon {
+  width: 40px;
+  height: auto;
+  display: block;
 }
 
 .menu-btn-right {
@@ -636,9 +660,8 @@
 }
 
 .custom-text-content {
-    font-family: 'Amatic SC', sans-serif !important;
-    font-size: 2.5rem !important;
-    font-weight: 700 !important;
+    font-family: 'Caveat', sans-serif !important;
+    font-size: 2rem !important;
     color: var(--white);
     margin: 0;
     text-transform: uppercase;

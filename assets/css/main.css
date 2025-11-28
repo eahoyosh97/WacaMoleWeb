@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'Caveat';
-    src: url('../webfonts/Caveat-VariableFont_wght.ttf') format('truetype');
+    src: url('../webfonts/CaveatBrush-Regular.ttf') format('truetype');
     font-weight: 100 700;
     font-style: normal;
 }
@@ -19,7 +19,7 @@ html, body {
 
 body {
     margin: 0;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Caveat', cursive;
     background: #fff;
     color: #000;
     overflow-x: hidden;
@@ -71,6 +71,10 @@ body {
 
 .padding-bottom-0 {
   padding-bottom: 0 !important;
+}
+
+.padding-0 {
+    padding: 0 !important;
 }
 
 .color-black {
@@ -140,12 +144,10 @@ body {
     color: var(--black);
     margin-left: 1rem;
     text-decoration: none;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     transition: 0.3s ease;
-    font-family: 'Amatic SC', sans-serif;
-    font-weight: 700;
-    -webkit-text-stroke: 1px currentColor;
+    font-family: 'Caveat', sans-serif;
 }
 
 .header > .logo {
@@ -207,6 +209,15 @@ body {
     }
 }
 
+.banner-static {
+  overflow: hidden;
+  padding: 4rem 0;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
 .btn-header {
     background-image: url('../../assets/img/btn-black-container.png');
     background-size: contain;
@@ -214,7 +225,7 @@ body {
     background-position: center;
     background-color: transparent;
     color: var(--black);
-    padding: 1rem 1.5rem;
+    padding: 1.5rem;
     border-radius: 0;
     text-decoration: none;
     display: inline-flex;
@@ -231,6 +242,31 @@ body {
         color: var(--purple);
         transform: scale(1.04);
         filter: brightness(1.1);
+    }
+
+.banner-btn {
+  background-color: var(--yellow);
+  color: var(--black);
+  padding: 1.2rem 2.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Caveat', sans-serif;
+  font-weight: bold !important;
+  font-size: 2rem !important;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 60%;
+  text-align: center;
+}
+
+    .banner-btn:hover {
+    transform: scale(1.08);
+    background-color: var(--white);
+    color: var(--purple);
+    box-shadow: 0 6px 20px rgba(247, 198, 0, 0.5);
     }
 
 .logo {
@@ -486,11 +522,10 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: url('../img/bg-home.jpg');
+    background-image: url('../img/bg-home.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -511,6 +546,7 @@ body {
     max-width: 1200px;
     padding: 2rem;
     gap: 2rem;
+    margin: 12rem 0;
 }
 
 .hero-btn {
@@ -519,9 +555,9 @@ body {
     padding: 1.2rem 2.5rem;
     border-radius: 10px;
     text-decoration: none;
-    font-family: 'Amatic SC', sans-serif;
-    font-size: 2rem !important;
-    font-weight: 700;
+    font-family: 'Caveat', sans-serif;
+    font-weight: bold !important;
+    font-size: 2.5rem !important;
     text-transform: uppercase;
     letter-spacing: 4px;
     transition: all 0.3s ease;
@@ -529,7 +565,6 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     width: 60%;
     text-align: center;
-    -webkit-text-stroke: 1px currentColor;
 }
 
 .hero-btn:hover {
@@ -576,14 +611,14 @@ body {
 
 @media (max-width: 576px) {
     .hero-btn {
-        font-size: 1rem;
-        padding: 0.8rem 1.5rem;
+        font-size: 1.5rem !important;
+        padding: 0.8rem 1rem;
         width: 80%;
         text-align: center;
     }
     
     .hero-buttons {
-        gap: 1rem !important;
+        gap: 2rem !important;
     }
 }
 
@@ -600,8 +635,8 @@ body {
 }
 
 .footer-item {
-    font-family: 'Amatic SC', cursive !important;
-    font-size: 1.3rem !important;
+    font-family: 'Caveat', cursive !important;
+    font-size: 1.4rem !important;
     font-weight: 600 !important;
     color: var(--beige) !important;
     border-bottom: none !important;
@@ -667,8 +702,8 @@ body {
 }
 
 .footer-quote {
-    font-family: 'Amatic SC', sans-serif !important;
-    font-size: 1.5rem !important;
+    font-family: 'Anton', sans-serif !important;
+    font-size: 1.2rem !important;
     font-weight: 400 !important;
     color: var(--beige) !important;
     margin: 0;
@@ -792,14 +827,14 @@ body {
     width: 100%;
     line-height: 0;
     overflow: hidden;
-    margin-top: -50px;
+    margin-top: -48px;
     position: relative;
     z-index: 10;
 }
 
 .wave-separator-top svg {
     width: 100%;
-    height: 50px;
+    height: 48px;
     display: block;
 }
 
@@ -807,7 +842,7 @@ body {
     width: 100%;
     line-height: 0;
     overflow: hidden;
-    margin-top: -60px;
+    margin-top: -58px;
     margin-bottom: 0;
     position: relative;
     z-index: 10;
@@ -857,7 +892,7 @@ body {
 .form-container .form-group label {
     font-size: 1.6rem !important;
     font-weight: bold !important;
-    font-family: 'Amatic SC', sans-serif !important;
+    font-family: 'Caveat', sans-serif !important;
 }
 
 .form-container .form-group input {
@@ -891,11 +926,13 @@ body {
 }
 
 .form-btn-submit {
+    font-family: 'Caveat', cursive;
     background: var(--yellow);
-    font-size: 1.2rem;
+    font-size: 2rem;
     display: block;
     margin: 0 auto;
     width: 180px;
+    letter-spacing: 4px;
     padding: 10px 20px;
     text-align: center;
     transition: 0.2s ease;
