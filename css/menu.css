@@ -782,3 +782,8 @@
   }
 }
 
+@media (max-width: 480px) {
+  .menu-content-box {
+    width: 90%;
+  }
+}
