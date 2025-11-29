@@ -50,6 +50,29 @@
     font-size: 1.6rem !important;
 }
 
+@media (max-width: 768px) {
+    .wave-separator-top {
+        margin-top: -18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .events-text-container {
+        width: 80%;
+    }
+    .events-title {
+        font-size: 4rem !important;
+    }
+
+    .events-subtitle {
+        font-size: 2rem !important;
+    }
+
+    .event-box p {
+        font-size: 1.2rem !important;
+    }
+}
+
 
 /* Gallery */
 .gallery-grid {
@@ -131,6 +154,88 @@
     transform: scale(1.05);
 }
 
+@media (max-width: 1024px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 1.5rem 0;
+    }
+    
+    .gallery-text {
+        font-size: 1.5rem !important;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding: 1rem 0;
+    }
+    
+    .gallery-text {
+        font-size: 1.2rem !important;
+        padding: 12px;
+        line-height: 1.3;
+    }
+    
+    .img-30-height {
+        height: 35%;
+    }
+    
+    .img-70-height {
+        height: 65%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 1rem 0;
+    }
+    
+    .col {
+        gap: 8px;
+    }
+    
+    .gallery-text {
+        font-size: 1.5rem !important;
+        padding: 20px;
+        height: 200px;
+        min-height: 200px;
+    }
+    
+    .img-30-height,
+    .img-70-height,
+    .img-half-height {
+        height: auto;
+        min-height: 180px;
+    }
+    
+    .img-full-height {
+        height: auto;
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 360px) {
+    .gallery-grid {
+        gap: 6px;
+    }
+    
+    .col {
+        gap: 6px;
+    }
+    
+    .gallery-text {
+        font-size: 1.3rem !important;
+        padding: 15px;
+        min-height: 180px;
+    }
+}
+
 /* Events Form */
 .form-section-events {
     background-color: var(--beige);
@@ -143,4 +248,10 @@
 .form-events-container{
     width: 60%;
     margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+    .form-events-container{
+        width: 80%;
+    }
 }
