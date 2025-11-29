@@ -241,23 +241,8 @@
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/templatemo.js"></script>
     <script src="js/main.js"></script>
     <!-- / Script -->
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const playButton = document.getElementById('playButton');
-            const videoContainer = document.getElementById('videoContainer');
-            const youtubeVideo = document.getElementById('youtubeVideo');
-            
-            videoContainer.addEventListener('click', function() {
-                playButton.style.display = 'none';
-                youtubeVideo.style.display = 'block';
-                youtubeVideo.src = youtubeVideo.src + '&autoplay=1';
-            });
-        });
-    </script>
 </body>
 
 </html>
