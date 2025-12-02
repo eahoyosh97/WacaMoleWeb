@@ -64,7 +64,7 @@
 
 .location-text-container {
   display: inline-block;
-  background-image: url('../../img/btn-black-container.png');
+  background-image: url('../img/btn-black-container.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

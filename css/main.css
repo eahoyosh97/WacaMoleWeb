@@ -264,7 +264,7 @@ body {
 }
 
 .btn-header {
-    background-image: url('../../img/btn-black-container.png');
+    background-image: url('../img/btn-black-container.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -684,7 +684,7 @@ body {
 
 .footer-item:hover {
     z-index: 100;
-    background-image: url('../../img/btn-yellow-container.png');
+    background-image: url('../img/btn-yellow-container.png');
     color: var(--yellow) !important;
     -webkit-text-stroke: 1px currentColor;
 }
