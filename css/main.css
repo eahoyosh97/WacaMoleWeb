@@ -748,7 +748,7 @@ body {
 }
 
 .footer-btns .footer-btn img:hover {
-    transform: scale(1.2);
+    transform: translateY(-20px);
 }
 
 .social-networks-other {
