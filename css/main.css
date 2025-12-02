@@ -683,6 +683,7 @@ body {
 }
 
 .footer-item:hover {
+    z-index: 100;
     background-image: url('../../img/btn-yellow-container.png');
     color: var(--yellow) !important;
     -webkit-text-stroke: 1px currentColor;
