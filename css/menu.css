@@ -1,3 +1,24 @@
+/* Utilidades */
+.height-auto {
+  height: auto !important;
+}
+
+.height-32rem {
+  height: 32rem !important;
+}
+
+.height-24rem {
+  height: 24rem !important;
+}
+
+.font-size-1rem {
+  font-size: 1rem !important;
+}
+
+.width-100 {
+  width: 100% !important;
+}
+
 /* Banner principal */
 .banner-static {
   overflow: hidden;
@@ -17,6 +38,21 @@
   background-size: cover;
   background-position: center;
   z-index: 0;
+}
+
+.banner-breakfast {
+  background-image: url('../img/breakfast/banner-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-breakfast::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1;
 }
 
 .banner-static .banner-bg-left {
@@ -81,11 +117,25 @@
   letter-spacing: 2px;
 }
 
+.banner-subtitle {
+  letter-spacing: 2px;
+  line-height: 1;
+  font-size: 2rem;
+  font-family: 'Caveat', cursive;
+  color: #000;
+  text-align: center;
+  padding-top: 20px;
+}
+
 @media (max-width: 768px) {
   .banner-static {
     min-height: 300px;
     padding: 3rem 0;
     height: auto;
+  }
+
+  .banner-subtitle {
+    font-size: 1.4rem !important;
   }
 
   .banner-content-box {
@@ -200,15 +250,22 @@
   margin-bottom: 2rem;
 }
 
+.menu-items-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .menu-item {
   height: 40px;
+  width: 60%;
   font-size: 1.4rem !important;
   font-family: 'Caveat', cursive;
   color: var(--black);
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
   border: 2px solid var(--black);
-  border-radius: 15px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
 }
@@ -255,6 +312,7 @@
   .menu-item {
     font-size: 1.5rem !important;
     padding: 0.4rem 0.8rem;
+    width: 80%;
   }
 }
 
@@ -276,8 +334,9 @@
   background-color: #65176F;
   padding: 5rem 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 2rem;
 }
 
 .title-paragraph-wrapper {
@@ -499,14 +558,18 @@
   border-radius: 25px 0 0 25px;
 }
 
+.border-radious-card {
+  border-radius: 15px;
+}
+
 .menu-card {
   display: flex;
-  height: 25rem;
+  height: 20rem;
   width: 65%;
   background-color: #F6E7D3;
   overflow: visible;
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-  border: 3px solid var(--black);
+  border: 2px solid var(--black);
 }
 
 .menu-card-fit {
@@ -566,11 +629,14 @@
   padding-right: 2.5rem !important;
 }
 
+.menu-divider {
+    border-top: 2px solid #000;
+    opacity: 1;
+}
+
 .menu-title {
-  margin-top: auto;
-  margin-bottom: 1rem;
-  font-size: 4rem;
-  font-weight: 700;
+  margin: auto;
+  font-size: 3rem;
   font-family: 'Anton', cursive;
   color: #000;
   text-align: center;
@@ -582,28 +648,30 @@
 }
 
 .menu-subtitle {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: 'Anton', cursive;
   color: #000;
-  text-align: left;
+  text-align: center;
   margin-bottom: 0;
 }
 
 .menu-description {
-  font-size: 1.4rem !important;
+  line-height: 1;
+  font-size: 1.2rem;
   font-family: 'Caveat', cursive;
   color: #000;
   margin-bottom: auto;
   padding: 40px 80px;
-  text-align: left;
+  text-align: center;
 }
 
 .menu-description-center {
-  font-size: 1.6rem !important;
+  font-size: 1.2rem !important;
   font-family: 'Caveat', cursive;
   color: #000;
   margin-bottom: 1.5rem;
   text-align: center;
+  line-height: 1;
 }
 
 .menu-btn {
@@ -765,6 +833,7 @@
   .menu-title {
     font-size: 2.5rem !important;
     margin-bottom: 0 !important;
+    padding: 2rem !important;
   }
     
   .menu-description,
@@ -785,5 +854,52 @@
 @media (max-width: 480px) {
   .menu-content-box {
     width: 90%;
+  }
+}
+
+.drinks-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  height: 16rem;
+}
+
+.drinks-container .menu-title {
+  flex-shrink: 0;
+  min-width: 200px;
+}
+
+.drinks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  flex: 1;
+}
+
+.drinks-grid .menu-item {
+  width: 100%;
+  height: 40px;
+  font-size: 1.4rem !important;
+  font-family: 'Caveat', cursive;
+  color: var(--black);
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .drinks-container {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto !important;
+  }
+  
+  .drinks-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
   }
 }

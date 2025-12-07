@@ -21,6 +21,9 @@
 .info-section-catering {
     background-color: var(--yellow);
     padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .info-container {
@@ -98,6 +101,7 @@
     margin: 0 auto;
     font-size: 1.6rem !important;
     font-family: 'Caveat', cursive;
+    line-height: 1;
 }
 
 .catering-right {
@@ -110,14 +114,14 @@
     text-align: center;
     border: 2px solid #000;
     border-radius: 25px;
-    padding: 2rem;
-    line-height: 1.4;
+    padding: 2rem 1rem;
+    line-height: 1;
 }
 
 .catering-box p {
     font-weight: bold !important;
     font-family: 'Caveat', cursive;
-    font-size: 1.6rem !important;
+    font-size: 1.4rem !important;
 }
 
 .catering-box p:last-child {
@@ -153,6 +157,11 @@
 }
 
 @media (max-width: 576px) {
+    .info-container {
+        width: 80%;
+        margin-bottom: 0;
+    }
+
     .main-section-catering {
         padding: 1rem 0 !important;
     }
@@ -296,7 +305,6 @@
 
     .how-bottom p {
         letter-spacing: 1px;
-        line-height: 1;
         font-size: 1.4rem !important;
     }
 

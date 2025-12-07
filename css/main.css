@@ -61,8 +61,16 @@ body {
   padding-top: 0 !important;
 }
 
+.padding-bottom-10px {
+    padding-bottom: 10px !important;
+}
+
 .margin-bottom-0 {
   margin-bottom: 0 !important;
+}
+
+.margin-bottom-2rem {
+  margin-bottom: 2rem !important;
 }
 
 .margin-bottom-4rem {
@@ -71,6 +79,10 @@ body {
 
 .padding-bottom-0 {
   padding-bottom: 0 !important;
+}
+
+.padding-bottom-2rem {
+    padding-bottom: 2rem !important;
 }
 
 .padding-0 {
@@ -230,14 +242,15 @@ body {
         transition: right 0.3s ease;
         justify-content: flex-start;
         gap: 2rem;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
     
     .nav.active {
         right: 0;
     }
     
-    .nav-left,
-    .nav-right {
+    .nav-left, .nav-right {
         flex-direction: column;
         width: 100%;
     }
@@ -251,6 +264,41 @@ body {
         color: var(--black);
         cursor: pointer;
         margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        width: 80%;
+        padding: 1.5rem !important;
+        gap: 1.5rem;
+    }
+    
+    .nav-left, .nav-right {
+        gap: 1rem;
+    }
+    
+    .nav a {
+        font-size: 1.1rem;
+        margin-left: 0;
+    }
+    
+    .btn-header {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .nav {
+        width: 85%;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .nav a {
+        font-size: 1rem;
     }
 }
 
@@ -645,7 +693,7 @@ body {
     .hero-btn {
         font-size: 1.5rem !important;
         padding: 0.8rem 1rem;
-        width: 80%;
+        width: 90%;
         text-align: center;
     }
     
@@ -721,7 +769,7 @@ body {
 }
 
 .footer-logo {
-    max-height: 80px;
+    max-height: 100px;
     width: auto;
 }
 
@@ -785,10 +833,6 @@ body {
 @media (max-width: 767.98px) {
     .footer-purple-section {
         padding: 2rem 1rem;
-    }
-    
-    .footer-purple-section .row > .col-12.col-md-6 .row > .col-4:first-child {
-        display: none;
     }
     
     .footer-purple-section .row > .col-12.col-md-6 .row > .col-4 {
@@ -962,7 +1006,7 @@ body {
 .form-btn-submit {
     font-family: 'Caveat', cursive;
     background: var(--yellow);
-    font-size: 2rem;
+    font-size: 1.6rem;
     display: block;
     margin: 0 auto;
     width: 180px;
