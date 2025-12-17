@@ -59,9 +59,11 @@
                         <div class="location-text-container">
                             <h1 class="location-text">Locations</h1>
                         </div>
+
                         <div class="mt-3" style="width: 100%;">
-                            <a href="https://linktr.ee/wacamole_nashville?fbclid=PAZXh0bgNhZW0CMTEAAacxvxTtnyzGuOSzLywkHcLfSrfWh6RGsu-m18Wyu7A9xIWMMNM-iKwOiWW5nw_aem_4qF_QTba_aNsNGQoUMNtgg" 
-                                class="btn btn-warning btn-lg banner-btn" style="width: 85%;">TAKE YOUR ORDER HERE</a>
+                            <button class="btn btn-warning btn-lg banner-btn" style="width: 85%;" data-bs-toggle="modal" data-bs-target="#locationModal">
+                                TAKE YOUR ORDER HERE
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -353,11 +355,10 @@
         </div>
 
         <div class="row align-items-center justify-content-center order-button-row margin-top-2rem">
-            <a href="https://linktr.ee/wacamole_nashville?fbclid=PAZXh0bgNhZW0CMTEAAacxvxTtnyzGuOSzLywkHcLfSrfWh6RGsu-m18Wyu7A9xIWMMNM-iKwOiWW5nw_aem_4qF_QTba_aNsNGQoUMNtgg" 
-            class="btn btn-warning btn-lg banner-btn d-flex align-items-center justify-content-center gap-2"
-            style="width: 60%;">
+            <button class="btn btn-warning btn-lg banner-btn d-flex align-items-center justify-content-center gap-2"
+                style="width: 60%;" data-bs-toggle="modal" data-bs-target="#locationModal">
                 TAKE YOUR ORDER HERE
-            </a>
+            </button>
         </div>
     </section>
 
@@ -448,6 +449,32 @@
         </div>
     </footer>
     <!-- / Footer -->
+
+
+    <!-- Modal 'Take your order' -->
+    <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content location-modal">
+                <div class="modal-body text-center">
+                    <h2 class="modal-title-main">Where are you ordering from?</h2>
+                    <p class="modal-subtitle">We've got two locations</p>
+                    <p class="modal-description">Pick the closest one to to place your order</p>
+                    
+                    <div class="locations-container">
+                        <!-- East Nashville -->
+                        <a href="https://order.getrevi.com/wacamole-mexican-street-food-2-1483" target="_blank" class="location-card-img">
+                            <img src="img/menu/location-east-nashville.png" alt="East Nashville Location" class="location-image">
+                        </a>
+                        
+                        <!-- Lebanon -->
+                        <a href="https://order.getrevi.com/wacamole-mexican-street-food-1430" target="_blank" class="location-card-img">
+                            <img src="img/menu/location-lebanon.png" alt="Lebanon Location" class="location-image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Scripts -->

@@ -903,3 +903,90 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Modal 'Take your order' */
+.location-modal {
+  background-color: var(--beige);
+  border-radius: 20px;
+  border: 3px solid var(--black);
+  padding: 1rem;
+}
+
+.location-modal .modal-header {
+  padding-bottom: 0;
+}
+
+.location-modal .btn-close {
+  font-size: 1.5rem;
+  opacity: 1;
+}
+
+.modal-title-main {
+  font-family: 'Anton';
+  font-size: 2rem;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.modal-subtitle {
+  font-family: 'Caveat';
+  font-size: 1.8rem;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+}
+
+.modal-description {
+  font-family: 'Caveat';
+  font-size: 1.2rem;
+  color: var(--white);
+  background-color: var(--black);
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.locations-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.location-card-img {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.location-card-img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.location-image {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .modal-title-main {
+    font-size: 1.5rem;
+  }
+  
+  .modal-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .modal-description {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+  
+  .locations-container {
+    padding: 0 0.5rem;
+    gap: 1rem;
+  }
+}
