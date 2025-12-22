@@ -1135,3 +1135,21 @@ body {
 .form-group input:valid:not(:placeholder-shown) {
     border-color: #28a745;
 }
+
+.form-loader {
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+    color: var(--purple);
+}
+
+.form-message {
+    display: none;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    font-family: 'Caveat', cursive;
+    font-size: 1.1rem;
+}
